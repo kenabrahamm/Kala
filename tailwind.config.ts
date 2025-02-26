@@ -5,6 +5,9 @@ module.exports = {
   darkMode: ["class"],
   safelist: ["dark"],
   prefix: "",
+  fontFamily: {
+    rosario: ['var(--font-rosario)'],
+  },
 
   content: [
     "./components/**/*.{ts,tsx}",

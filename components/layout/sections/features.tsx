@@ -1,93 +1,69 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { Icon } from "@/components/ui/icon";
-import { icons } from "lucide-react";
-
+import { ArrowRight, BadgeCheck, icons } from "lucide-react";
+import Image from "next/image";
+import { Badge } from "@/components/ui/badge";
 interface FeaturesProps {
   icon: string;
   title: string;
   description: string;
 }
 
-const featureList: FeaturesProps[] = [
-  {
-    icon: "TabletSmartphone",
-    title: "Mobile Friendly",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam, consectetur.",
-  },
-  {
-    icon: "BadgeCheck",
-    title: "Social Proof",
-    description:
-      "Lorem ipsum dolor sit amet consectetur. Natus consectetur, odio ea accusamus aperiam.",
-  },
-  {
-    icon: "Goal",
-    title: "Targeted Content",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. odio ea accusamus aperiam.",
-  },
-  {
-    icon: "PictureInPicture",
-    title: "Strong Visuals",
-    description:
-      "Lorem elit. A odio velit cum aliquam. Natus consectetur dolores, odio ea accusamus aperiam.",
-  },
-  {
-    icon: "MousePointerClick",
-    title: "Clear CTA",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing. odio ea accusamus consectetur.",
-  },
-  {
-    icon: "Newspaper",
-    title: "Clear Headline",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam. Natus consectetur.",
-  },
-];
+
 
 export const FeaturesSection = () => {
   return (
-    <section id="features" className="container py-24 sm:py-32">
-      <h2 className="text-lg text-primary text-center mb-2 tracking-wider">
-        Features
-      </h2>
+    <div id="features" className="w-full flex justify-center items-center mt-20 px-8">
+      <div className="w-[90vw] bg-gradient-to-b from-white to-[#FFF7E8]/20 border border-gray-200 shadow-sm ring-1 ring-[#FDBA74]/10 rounded-sm p-6">
+        <div className="">
+          <div className="flex flex-col md:flex-row gap-4 rounded-xl">
+            <div className="p-4">
+              <Carousel>
+                <CarouselContent>
+                    <CarouselItem>
+                      <div className="">
+                      <Image
+                        width={1000}
+                        height={1000}
+                        src={'/prep_practice.jpg'}
+                        alt="prep+practice image"
+                        className="rounded-sm border border-gray-200 border-stroke-2"
+                        />
+                        </div>
 
-      <h2 className="text-3xl md:text-4xl text-center font-bold mb-4">
-        What Makes Us Different
-      </h2>
 
-      <h3 className="md:w-1/2 mx-auto text-xl text-center text-muted-foreground mb-8">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem
-        fugiat, odit similique quasi sint reiciendis quidem iure veritatis optio
-        facere tenetur.
-      </h3>
+                  
+                    </CarouselItem>
+                    <CarouselItem>
 
-      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-        {featureList.map(({ icon, title, description }) => (
-          <div key={title}>
-            <Card className="h-full bg-background border-0 shadow-none">
-              <CardHeader className="flex justify-center items-center">
-                <div className="bg-primary/20 p-2 rounded-full ring-8 ring-primary/10 mb-4">
-                  <Icon
-                    name={icon as keyof typeof icons}
-                    size={24}
-                    color="hsl(var(--primary))"
-                    className="text-primary"
-                  />
-                </div>
+              
+                    </CarouselItem>
+                </CarouselContent>
+                <CarouselPrevious className="left-2" />
+                <CarouselNext className="right-2" />
+              </Carousel>
+            </div>
 
-                <CardTitle>{title}</CardTitle>
-              </CardHeader>
+            <div className=" md:w-1/2 space-y-6 p-4">
+              <h1 className="text-4xl font-semibold">
+              Prep + Practice
+              </h1>
 
-              <CardContent className="text-muted-foreground text-center">
-                {description}
-              </CardContent>
-            </Card>
+              <p className="text-lg text-[#475569] font-['Helvetica Neue'] font-regular">
+              {`Prep + Practice program, offering free classes for intermediate and advanced Bharatanatyam dancers from all banis. These sessions focus on building a strong foundation through warm-ups, form-focused exercises, and exploratory adavu practice, fostering growth in a community-driven environment.`}
+              </p>
+              <Badge className="text-sm py-2 bg-black text-white rounded-none border-muted-foreground">
+                <span className="mr-2 text-white flex items-center font-['Rosario'] font-thin">
+                  Connect with us <ArrowRight className="size-5 ml-2" />
+                </span>
+              </Badge>
+
+
+            </div>
           </div>
-        ))}
+        </div>
       </div>
-    </section>
+    </div>
   );
 };

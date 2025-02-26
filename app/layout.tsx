@@ -5,6 +5,13 @@ import { cn } from "@/lib/utils";
 import { Navbar } from "@/components/layout/navbar";
 import { ThemeProvider } from "@/components/layout/theme-provider";
 const inter = Inter({ subsets: ["latin"] });
+import { Rosario } from 'next/font/google'
+
+const rosario = Rosario({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+  variable: '--font-rosario',
+})
 
 export const metadata: Metadata = {
   title: "Shadcn - Landing template",
@@ -18,7 +25,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br" suppressHydrationWarning>
-      <body className={cn("min-h-screen bg-background", inter.className)}>
+      <body className={cn("min-h-screen bg-[#FFF7E8]", inter.className)}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
