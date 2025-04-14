@@ -21,7 +21,7 @@ export const performances: Performance[] = [
     ],
     color: "peacock-teal",
     videoUrl: "https://youtu.be/KZbYhWzd5FY",
-    image: "/placeholder.svg?height=600&width=800",
+    image: "/space.jpg",
     tag: "Kala Space",
     monthYear: "November 2023"
   },
@@ -34,7 +34,7 @@ export const performances: Performance[] = [
       "Through processes of colonization, immigration, and forced homogenization, many families have lost their connection to their Kula Devi. This work is a reflection on the intertwining roles of deity and devotee and a reconnection to our own ancestry, celebrating the resilience and reverence of our heritage within a contemporary context."
     ],
     color: "peacock-purple",
-    image: "/placeholder.svg?height=600&width=800",
+    image: "/together.jpg",
     tag: "Kala Space",
     monthYear: "January 2024"
   }

@@ -2,7 +2,7 @@ import { MainNav } from "@/components/main-nav"
 import { TorontoSkyline } from "@/components/toronto-skyline"
 import { RaccoonIcon } from "@/components/raccoon-icon"
 import { performances } from "@/app/data/performances"
-
+import { Footer } from "@/components/footer"
 export default function PerformancesPage() {
   return (
     <div className="flex min-h-screen flex-col">
@@ -10,7 +10,7 @@ export default function PerformancesPage() {
       <main className="flex-1 p-8 md:p-16">
         <div className="mb-16 flex items-end">
           <h1 className="text-[8rem] leading-[0.9] font-normal tracking-tight text-peacock-blue">Performances</h1>
-          <TorontoSkyline className="h-12 w-48 text-peacock-gold mb-4 ml-4" />
+          
         </div>
 
         {performances.map((performance, index) => {
@@ -33,7 +33,7 @@ export default function PerformancesPage() {
                       className="w-full aspect-video object-cover"
                     />
                     <div className={`absolute ${index % 2 === 0 ? 'top-4 left-4' : 'bottom-4 right-4 bg-white/80 p-1 rounded-full'}`}>
-                      <RaccoonIcon className={`${textColor} ${index % 2 === 1 ? 'h-8 w-8' : ''}`} />
+                      {/* <RaccoonIcon className={`${textColor} ${index % 2 === 1 ? 'h-8 w-8' : ''}`} /> */}
                     </div>
                   </div>
                 </div>
@@ -64,6 +64,7 @@ export default function PerformancesPage() {
           );
         })}
       </main>
+      <Footer />
     </div>
   )
 }

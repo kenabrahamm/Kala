@@ -17,7 +17,7 @@ export default function PrepPracticePage() {
           <div className="flex-grow">
             <div className="flex items-center mb-8">
               <h1 className="text-5xl font-normal tracking-tight">PREP + PRACTICE</h1>
-              <RaccoonIcon className="ml-4 text-peacock-gold" />
+              
             </div>
 
             <div className="mb-8">
@@ -67,7 +67,7 @@ export default function PrepPracticePage() {
                 Toronto, ON M5V 2K6
               </p>
               <div className="mt-2">
-                <TorontoSkyline className="h-6 w-24 text-peacock-blue" />
+                
               </div>
             </div>
 
@@ -96,12 +96,12 @@ export default function PrepPracticePage() {
         </div>
         <div className="w-full md:w-1/2 relative">
           <img
-            src="/placeholder.svg?height=1000&width=800"
+            src="/space.jpg"
             alt="Prep + Practice dance class"
             className="w-full h-full object-cover"
           />
           <div className="absolute bottom-8 right-8 bg-white/80 p-2 rounded-full">
-            <RaccoonIcon className="text-peacock-purple h-12 w-12" />
+            
           </div>
         </div>
       </main>
