@@ -1,42 +1,31 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
-import { cn } from "@/lib/utils";
-import { Navbar } from "@/components/layout/navbar";
-import { ThemeProvider } from "@/components/layout/theme-provider";
-const inter = Inter({ subsets: ["latin"] });
-import { Rosario } from 'next/font/google'
+import type React from "react"
+import "./globals.css"
+import type { Metadata } from "next"
+import { Inter } from "next/font/google"
 
-const rosario = Rosario({
-  subsets: ['latin'],
-  weight: ['400', '700'],
-  variable: '--font-rosario',
+const inter = Inter({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  variable: "--font-inter",
 })
 
 export const metadata: Metadata = {
-  title: "Shadcn - Landing template",
-  description: "Landing template from Shadcn",
-};
+  title: "Kala Dance Collective",
+  description: "Toronto-based dance collective exploring movement traditions",
+    generator: 'v0.dev'
+}
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: React.ReactNode
 }>) {
   return (
-    <html lang="pt-br" suppressHydrationWarning>
-      <body className={cn("min-h-screen bg-[#FFF7E8]", inter.className)}>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          <Navbar />
-
-          {children}
-        </ThemeProvider>
-      </body>
+    <html lang="en">
+      <body className={`${inter.variable} font-sans antialiased`}>{children}</body>
     </html>
-  );
+  )
 }
+
+
+import './globals.css'
