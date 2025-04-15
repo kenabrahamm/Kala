@@ -1,6 +1,13 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import {
+  Sheet,
+  SheetContent,
+  SheetHeader,
+  SheetTitle,
+} from "@/components/ui/sheet"
+import { ScrollArea } from "@/components/ui/scroll-area"
+import { useRef, useEffect, useState } from 'react'
 
 interface BioPopupProps {
   isOpen: boolean;
@@ -11,38 +18,42 @@ interface BioPopupProps {
 }
 
 export function BioPopup({ isOpen, onClose, name, bio, color }: BioPopupProps) {
-  useEffect(() => {
-    const handleEscape = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') onClose();
-    };
-    
-    if (isOpen) {
-      document.addEventListener('keydown', handleEscape);
-      document.body.style.overflow = 'hidden';
-    }
-    
-    return () => {
-      document.removeEventListener('keydown', handleEscape);
-      document.body.style.overflow = 'unset';
-    };
-  }, [isOpen, onClose]);
+  const contentRef = useRef<HTMLDivElement>(null);
+  const [contentHeight, setContentHeight] = useState<number>(0);
 
-  if (!isOpen) return null;
+  useEffect(() => {
+    if (contentRef.current && isOpen) {
+      // Get the content height + some padding
+      const height = contentRef.current.scrollHeight + 100; // 100px for header and padding
+      // Limit to 90vh on mobile, 85vh on desktop
+      const maxHeight = window.innerWidth >= 640 ? window.innerHeight * 0.85 : window.innerHeight * 0.9;
+      setContentHeight(Math.min(height, maxHeight));
+    }
+  }, [isOpen, bio]);
 
   return (
-    <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4">
-      <div className="bg-white max-w-2xl w-full rounded-lg shadow-xl relative">
-        <button
-          onClick={onClose}
-          className={`absolute -top-4 -right-4 w-8 h-8 rounded-full bg-${color} text-white flex items-center justify-center hover:bg-black transition-colors`}
-        >
-          ×
-        </button>
-        <div className="p-6">
-          <h3 className={`text-2xl font-normal mb-4 text-${color}`}>{name}</h3>
-          <p className="text-gray-700 leading-relaxed">{bio}</p>
-        </div>
-      </div>
-    </div>
+    <Sheet open={isOpen} onOpenChange={onClose} modal={true}>
+      <SheetContent 
+        side="bottom" 
+        className="rounded-t-[20px] overflow-hidden"
+        style={{ height: contentHeight ? `${contentHeight}px` : 'auto' }}
+      >
+        <SheetHeader className="mb-4">
+          <SheetTitle className={`text-xl sm:text-2xl font-normal text-${color}`}>
+            {name}
+          </SheetTitle>
+        </SheetHeader>
+        <ScrollArea className="h-[calc(100%-80px)]">
+          <div 
+            ref={contentRef}
+            className="text-gray-700 leading-relaxed text-base sm:text-lg space-y-4 pr-4"
+          >
+            {bio.split('\n\n').map((paragraph, index) => (
+              <p key={index}>{paragraph}</p>
+            ))}
+          </div>
+        </ScrollArea>
+      </SheetContent>
+    </Sheet>
   )
 } 

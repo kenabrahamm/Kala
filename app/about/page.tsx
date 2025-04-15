@@ -3,7 +3,7 @@ import { TorontoSkyline } from "@/components/toronto-skyline"
 import { TeamMemberCard } from "@/app/components/team-member-card"
 import { AboutContent } from "@/app/components/about-content"
 import { teamMembers } from "@/app/data/team"
-import { Footer } from "@/components/footer"
+import { Footer } from "@/app/components/footer"
 
 const aboutContent = [
   "Kala Dance Collective is rooted in Bharatanatyam, with a vision to honor classical technique while pushing the boundaries of tradition. Our work centers around exploration and experimentation, discovering new pathways of expression within the form. We aim to tell stories that reflect our Canadian diasporic experiences, celebrate our heritage, and showcase the richness of South Asian culture through dance.",
@@ -30,13 +30,7 @@ export default function AboutPage() {
           ))}
         </div>
 
-        <div className="mt-8 border-t border-black pt-8 flex justify-between items-center">
-          <TorontoSkyline className="h-10 w-40 text-peacock-teal" />
-          <div className="text-sm text-right">
-            <p>Kala Dance Collective</p>
-            <p>Toronto, Canada</p>
-          </div>
-        </div>
+      
       </main>
       <Footer />
     </div>

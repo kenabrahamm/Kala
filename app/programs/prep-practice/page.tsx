@@ -84,12 +84,12 @@ export default function PrepPracticePage() {
 
             <div>
               <a
-                href="https://forms.google.com"
+                // href="https://forms.google.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block border border-peacock-purple bg-peacock-purple text-white px-8 py-3 hover:bg-white hover:text-peacock-purple transition-colors"
               >
-                Register Now
+                Coming Soon
               </a>
             </div>
           </div>

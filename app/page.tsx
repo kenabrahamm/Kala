@@ -6,7 +6,7 @@ import Link from "next/link"
 import { performances } from "@/app/data/performances"
 import { teamMembers } from "@/app/data/team"
 import { TeamMemberCard } from "@/app/components/team-member-card"
-import { Footer } from "@/components/footer"
+import { Footer } from "@/app/components/footer"
 
 export default function Home() {
   return (

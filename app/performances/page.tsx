@@ -2,14 +2,14 @@ import { MainNav } from "@/components/main-nav"
 import { TorontoSkyline } from "@/components/toronto-skyline"
 import { RaccoonIcon } from "@/components/raccoon-icon"
 import { performances } from "@/app/data/performances"
-import { Footer } from "@/components/footer"
+import { Footer } from "@/app/components/footer"
 export default function PerformancesPage() {
   return (
     <div className="flex min-h-screen flex-col">
       <MainNav />
       <main className="flex-1 p-8 md:p-16">
         <div className="mb-16 flex items-end">
-          <h1 className="text-[8rem] leading-[0.9] font-normal tracking-tight text-peacock-blue">Performances</h1>
+          <h1 className="text-6xl md:text-[8rem] leading-[0.9] font-normal tracking-tight text-peacock-blue">Performances</h1>
           
         </div>
 

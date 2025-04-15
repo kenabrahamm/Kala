@@ -1,10 +1,9 @@
 import { RaccoonIcon } from "@/components/raccoon-icon"
 
 const socialLinks = [
-  { name: 'Instagram', url: 'https://instagram.com' },
-  { name: 'Facebook', url: 'https://facebook.com' },
-  { name: 'YouTube', url: 'https://youtube.com' },
-  { name: 'Contact', url: 'mailto:info@kaladancecollective.com' }
+  { name: 'Instagram', url: 'https://www.instagram.com/kaladancecollective' },
+
+  { name: 'Contact', url: 'mailto:kaladancecollective@gmail.com' }
 ]
 
 export function Footer() {
