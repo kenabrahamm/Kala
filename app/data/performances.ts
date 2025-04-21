@@ -13,8 +13,8 @@ export interface Performance {
 export const performances: Performance[] = [
   {
     title: "NIRGUNA",
-    date: "NOV 10TH-12TH 2023",
-    venue: "HARBOURFRONT CENTRE, TORONTO",
+    date: "October 2019",
+    venue: "The Citadel: Ross Centre for Dance, TORONTO",
     description: [
       "Nirguna is a Bharatanatyam work that aims to portray the cyclical nature of the ascetic Hindu god Shiva, who is synonymous with the idea of destruction. How does one provide form to something that is formless? How does one portray stillness in an ever-moving world?",
       "The work examines the duality that Shiva represents, and the cyclical and intimate nature of creation and destruction. Through the well-known symbols that adorn Shiva - the snakes around his neck, the ashes smeared on his head, the tiger skin around his waist - we explore the juxtaposition of peace and stillness within chaos."

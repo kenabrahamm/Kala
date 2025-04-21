@@ -1,7 +1,7 @@
 import Link from "next/link"
-import { MainNav } from "@/components/main-nav"
-import { TorontoSkyline } from "@/components/toronto-skyline"
-import { RaccoonIcon } from "@/components/raccoon-icon"
+import { MainNav } from "@/app/components/main-nav"
+import { TorontoSkyline } from "@/app/components/toronto-skyline"
+import { RaccoonIcon } from "@/app/components/raccoon-icon"
 
 export default function PrepPracticePage() {
   return (

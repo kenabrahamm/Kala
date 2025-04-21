@@ -1,6 +1,6 @@
-import { MainNav } from "@/components/main-nav"
-import { TorontoSkyline } from "@/components/toronto-skyline"
-import { RaccoonIcon } from "@/components/raccoon-icon"
+import { MainNav } from "@/app/components/main-nav"
+import { TorontoSkyline } from "@/app/components/toronto-skyline"
+import { RaccoonIcon } from "@/app/components/raccoon-icon"
 import Image from "next/image"
 import Link from "next/link"
 import { performances } from "@/app/data/performances"
@@ -184,7 +184,7 @@ export default function Home() {
 
           <div className="mt-8 flex flex-col sm:flex-row items-center gap-4">
             <Link
-              href="/about"
+              href="/team"
               className="w-full sm:w-auto inline-block border border-peacock-teal bg-peacock-teal text-white px-8 py-3 hover:bg-white hover:text-peacock-teal transition-colors text-center"
             >
               Meet Our Team

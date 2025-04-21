@@ -5,9 +5,7 @@ import {
   SheetContent,
   SheetHeader,
   SheetTitle,
-} from "@/components/ui/sheet"
-import { ScrollArea } from "@/components/ui/scroll-area"
-import { useRef, useEffect, useState } from 'react'
+} from "@/app/components/ui/sheet"
 
 interface BioPopupProps {
   isOpen: boolean;
@@ -18,41 +16,26 @@ interface BioPopupProps {
 }
 
 export function BioPopup({ isOpen, onClose, name, bio, color }: BioPopupProps) {
-  const contentRef = useRef<HTMLDivElement>(null);
-  const [contentHeight, setContentHeight] = useState<number>(0);
-
-  useEffect(() => {
-    if (contentRef.current && isOpen) {
-      // Get the content height + some padding
-      const height = contentRef.current.scrollHeight + 100; // 100px for header and padding
-      // Limit to 90vh on mobile, 85vh on desktop
-      const maxHeight = window.innerWidth >= 640 ? window.innerHeight * 0.85 : window.innerHeight * 0.9;
-      setContentHeight(Math.min(height, maxHeight));
-    }
-  }, [isOpen, bio]);
-
   return (
     <Sheet open={isOpen} onOpenChange={onClose} modal={true}>
       <SheetContent 
         side="bottom" 
-        className="rounded-t-[20px] overflow-hidden"
-        style={{ height: contentHeight ? `${contentHeight}px` : 'auto' }}
+        className="rounded-t-[20px] p-0 h-[60vh] flex flex-col"
       >
-        <SheetHeader className="mb-4">
+        <SheetHeader className="px-6 py-4 border-b shrink-0 bg-white">
           <SheetTitle className={`text-xl sm:text-2xl font-normal text-${color}`}>
             {name}
           </SheetTitle>
         </SheetHeader>
-        <ScrollArea className="h-[calc(100%-80px)]">
-          <div 
-            ref={contentRef}
-            className="text-gray-700 leading-relaxed text-base sm:text-lg space-y-4 pr-4"
-          >
-            {bio.split('\n\n').map((paragraph, index) => (
-              <p key={index}>{paragraph}</p>
-            ))}
+        <div className="flex-1 overflow-y-auto webkit-overflow-scrolling-touch">
+          <div className="px-6 py-4">
+            <div className="text-gray-700 leading-relaxed text-base sm:text-lg space-y-3">
+              {bio.split('\n\n').map((paragraph, index) => (
+                <p key={index}>{paragraph}</p>
+              ))}
+            </div>
           </div>
-        </ScrollArea>
+        </div>
       </SheetContent>
     </Sheet>
   )

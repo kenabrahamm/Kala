@@ -1,6 +1,6 @@
-import { MainNav } from "@/components/main-nav"
-import { TorontoSkyline } from "@/components/toronto-skyline"
-import { RaccoonIcon } from "@/components/raccoon-icon"
+import { MainNav } from "@/app/components/main-nav"
+import { TorontoSkyline } from "@/app/components/toronto-skyline"
+import { RaccoonIcon } from "@/app/components/raccoon-icon"
 import { performances } from "@/app/data/performances"
 import { Footer } from "@/app/components/footer"
 export default function PerformancesPage() {
@@ -39,10 +39,10 @@ export default function PerformancesPage() {
                 </div>
                 <div className="w-full md:w-1/2">
                   <div className={`inline-block border ${borderColor} ${textColor} px-4 py-1 mb-4`}>
-                    {performance.tag}
+                    {performance.date}
                   </div>
                   <h2 className={`text-3xl font-normal mb-2 ${textColor}`}>{performance.title}</h2>
-                  <p className="uppercase mb-6">{performance.date}, {performance.venue}</p>
+                  <p className="uppercase mb-6"> {performance.venue}</p>
                   {performance.description.map((paragraph, i) => (
                     <p key={i} className="mb-6">{paragraph}</p>
                   ))}

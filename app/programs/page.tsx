@@ -1,4 +1,4 @@
-import { MainNav } from "@/components/main-nav"
+import { MainNav } from "@/app/components/main-nav"
 
 export default function ProgramsPage() {
   return (

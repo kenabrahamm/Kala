@@ -1,4 +1,4 @@
-import { RaccoonIcon } from "@/components/raccoon-icon"
+import { RaccoonIcon } from "@/app/components/raccoon-icon"
 
 const socialLinks = [
   { name: 'Instagram', url: 'https://www.instagram.com/kaladancecollective' },

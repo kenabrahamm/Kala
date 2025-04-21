@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { RaccoonIcon } from "@/components/raccoon-icon"
+import { RaccoonIcon } from "@/app/components/raccoon-icon"
 import { BioPopup } from "@/app/components/bio-popup"
 import { type TeamMember } from "@/app/data/team"
 
@@ -11,7 +11,7 @@ interface TeamMemberCardProps {
 
 export function TeamMemberCard({ member }: TeamMemberCardProps) {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
-  const { name, role, image, color, bio, type } = member;
+  const { name, role, image, color, bio } = member;
   
   const getColorClasses = (color: TeamMember['color']) => ({
     border: `border-${color}`,
@@ -31,14 +31,7 @@ export function TeamMemberCard({ member }: TeamMemberCardProps) {
         <div className={`border-t ${colors.border} pt-4 pr-4 pb-12 
           transition-colors duration-300 group-hover:bg-gray-50`}>
           <div className={`uppercase text-sm mb-2 ${colors.text}`}>
-            {/* {role.department} */}
-            <br />
             {role.title}
-            {type !== 'core' && (
-              <span className="inline-block ml-2 text-xs px-2 py-1 rounded-full bg-gray-100">
-                {type}
-              </span>
-            )}
           </div>
           <div className="aspect-[3/4] bg-gray-100 mb-4 relative overflow-hidden">
             <img

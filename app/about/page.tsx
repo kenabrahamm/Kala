@@ -1,5 +1,5 @@
-import { MainNav } from "@/components/main-nav"
-import { TorontoSkyline } from "@/components/toronto-skyline"
+import { MainNav } from "@/app/components/main-nav"
+import { TorontoSkyline } from "@/app/components/toronto-skyline"
 import { TeamMemberCard } from "@/app/components/team-member-card"
 import { AboutContent } from "@/app/components/about-content"
 import { teamMembers } from "@/app/data/team"
@@ -12,25 +12,52 @@ const aboutContent = [
 ]
 
 export default function AboutPage() {
+  const collaborators = teamMembers.filter(member => member.type === 'collaborator')
+  const boardMembers = teamMembers.filter(member => member.type === 'board')
+
   return (
     <div className="flex min-h-screen flex-col">
       <MainNav />
-      <main className="flex-1 p-8 md:p-16">
-        <div className="mb-8 flex items-end">
-          <h1 className="text-[8rem] leading-[0.9] font-normal tracking-tight text-peacock-teal">
-            TEAM<span className="text-2xl align-top ml-2 text-peacock-gold">{teamMembers.length.toString().padStart(2, '0')}</span>
-          </h1>
-        </div>
-        
-        <AboutContent content={aboutContent} />
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-0">
-          {teamMembers.map((member) => (
-            <TeamMemberCard key={`${member.name.first}-${member.name.last}`} member={member} />
-          ))}
+      <main className="flex-1">
+        <div className="p-8 md:p-16">
+          <div className="mb-8 flex items-end">
+            <h1 className="text-[8rem] leading-[0.9] font-normal tracking-tight text-peacock-teal">
+              ABOUT
+            </h1>
+          </div>
+          
+          <AboutContent content={aboutContent} />
         </div>
 
-      
+        {/* Collaborators Section */}
+        <section className="p-8 md:p-16 border-t border-black">
+          <h2 className="text-4xl md:text-5xl font-normal tracking-tight mb-8 md:mb-12 text-peacock-purple">
+            COLLABORATORS
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+            {collaborators.map((member) => (
+              <TeamMemberCard
+                key={`${member.name.first}-${member.name.last}`}
+                member={member}
+              />
+            ))}
+          </div>
+        </section>
+
+        {/* Board Section */}
+        <section className="p-8 md:p-16 border-t border-black">
+          <h2 className="text-4xl md:text-5xl font-normal tracking-tight mb-8 md:mb-12 text-peacock-gold">
+            BOARD
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+            {boardMembers.map((member) => (
+              <TeamMemberCard
+                key={`${member.name.first}-${member.name.last}`}
+                member={member}
+              />
+            ))}
+          </div>
+        </section>
       </main>
       <Footer />
     </div>
