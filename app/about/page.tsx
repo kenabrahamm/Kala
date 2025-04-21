@@ -21,7 +21,7 @@ export default function AboutPage() {
       <main className="flex-1">
         <div className="p-8 md:p-16">
           <div className="mb-8 flex items-end">
-            <h1 className="text-[8rem] leading-[0.9] font-normal tracking-tight text-peacock-teal">
+            <h1 className="text-6xl md:text-[8rem] leading-[0.9] font-normal tracking-tight text-peacock-teal">
               ABOUT
             </h1>
           </div>

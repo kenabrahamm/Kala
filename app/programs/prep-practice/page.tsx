@@ -1,7 +1,6 @@
 import Link from "next/link"
 import { MainNav } from "@/app/components/main-nav"
 import { TorontoSkyline } from "@/app/components/toronto-skyline"
-import { RaccoonIcon } from "@/app/components/raccoon-icon"
 
 export default function PrepPracticePage() {
   return (
@@ -40,31 +39,19 @@ export default function PrepPracticePage() {
               <h2 className="text-xl font-normal mb-2 text-peacock-teal">SCHEDULE</h2>
               <div className="border-t border-peacock-teal">
                 <div className="flex justify-between py-4 border-b border-peacock-teal">
-                  <div>Mondays</div>
-                  <div>6:30 PM - 8:00 PM</div>
-                  <div>Beginner</div>
+                  <div className="">To be announced</div>
+                 
                 </div>
-                <div className="flex justify-between py-4 border-b border-peacock-teal">
-                  <div>Wednesdays</div>
-                  <div>6:30 PM - 8:00 PM</div>
-                  <div>Beginner</div>
-                </div>
-                <div className="flex justify-between py-4 border-b border-peacock-teal">
-                  <div>Saturdays</div>
-                  <div>10:00 AM - 12:00 PM</div>
-                  <div>Beginner</div>
-                </div>
+                
               </div>
             </div>
 
             <div className="mb-8">
               <h2 className="text-xl font-normal mb-2 text-peacock-blue">LOCATION</h2>
               <p>
-                Kala Studio
+                To be announced
                 <br />
-                123 Dance Street
-                <br />
-                Toronto, ON M5V 2K6
+            
               </p>
               <div className="mt-2">
                 

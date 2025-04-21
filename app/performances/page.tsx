@@ -30,11 +30,8 @@ export default function PerformancesPage() {
                     <img
                       src={performance.image}
                       alt={performance.title}
-                      className="w-full aspect-video object-cover"
+                      className="w-full aspect-[4/5] object-cover"
                     />
-                    <div className={`absolute ${index % 2 === 0 ? 'top-4 left-4' : 'bottom-4 right-4 bg-white/80 p-1 rounded-full'}`}>
-                      {/* <RaccoonIcon className={`${textColor} ${index % 2 === 1 ? 'h-8 w-8' : ''}`} /> */}
-                    </div>
                   </div>
                 </div>
                 <div className="w-full md:w-1/2">

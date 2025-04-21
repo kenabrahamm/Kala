@@ -1,98 +1,67 @@
 import { MainNav } from "@/app/components/main-nav"
+import { programs } from "@/app/data/programs"
 
 export default function ProgramsPage() {
   return (
     <div className="flex min-h-screen flex-col">
       <MainNav />
       <main className="flex-1">
-        <div className="p-8 md:p-16">
-          <div className="mb-16">
-            <h1 className="text-[8rem] leading-[0.9] font-normal tracking-tight">Programs</h1>
+        <div className="p-4 sm:p-8 md:p-16">
+          <div className="mb-8 md:mb-16">
+            <h1 className="text-4xl sm:text-6xl md:text-[8rem] leading-[0.9] font-normal tracking-tight">Programs</h1>
           </div>
 
           {/* Programs List */}
           <div className="border-t border-black">
-            <div className="flex flex-col md:flex-row justify-between py-6 border-b border-black">
-              <div className="text-xl font-normal">PREP + PRACTICE</div>
-              <div className="text-right">WEEKLY CLASSES</div>
-              <div className="text-right md:w-32">
-                <a href="/programs/prep-practice" className="hover:underline">
-                  MORE +
-                </a>
-              </div>
-            </div>
+            {programs.map((program) => {
+              const borderColor = program.color === 'peacock-teal' ? 'border-peacock-teal' : 
+                                program.color === 'peacock-purple' ? 'border-peacock-purple' :
+                                program.color === 'peacock-blue' ? 'border-peacock-blue' : 'border-peacock-gold';
+              
+              const textColor = program.color === 'peacock-teal' ? 'text-peacock-teal' : 
+                              program.color === 'peacock-purple' ? 'text-peacock-purple' :
+                              program.color === 'peacock-blue' ? 'text-peacock-blue' : 'text-peacock-gold';
 
-            <div className="flex flex-col md:flex-row justify-between py-6 border-b border-black">
-              <div className="text-xl font-normal">SUMMER INTENSIVE</div>
-              <div className="text-right">WORKSHOP SERIES</div>
-              <div className="text-right md:w-32">
-                <a href="#" className="hover:underline">
-                  MORE +
+              return (
+                <a 
+                  key={program.title} 
+                  href={program.link}
+                  className="block p-4 border-b border-black hover:bg-gray-50 transition-colors duration-200"
+                >
+                  <div className="flex flex-col gap-2 md:flex-row md:items-center md:justify-between">
+                    <div className={`text-lg sm:text-xl font-normal ${textColor}`}>{program.title}</div>
+                    <div className="text-sm sm:text-base text-left md:text-right mt-1 md:mt-0">{program.subtitle}</div>
+                    <div className="text-left md:text-right md:w-32 mt-2 md:mt-0">
+                      <span className={`inline-flex items-center gap-1 text-sm sm:text-base hover:underline ${textColor}`}>
+                        MORE <span className="text-base">+</span>
+                      </span>
+                    </div>
+                  </div>
                 </a>
-              </div>
-            </div>
-
-            <div className="flex flex-col md:flex-row justify-between py-6 border-b border-black">
-              <div className="text-xl font-normal">YOUTH DANCE</div>
-              <div className="text-right">AGES 7-16</div>
-              <div className="text-right md:w-32">
-                <a href="#" className="hover:underline">
-                  MORE +
-                </a>
-              </div>
-            </div>
-
-            <div className="flex flex-col md:flex-row justify-between py-6 border-b border-black">
-              <div className="text-xl font-normal">PROFESSIONAL DEVELOPMENT</div>
-              <div className="text-right">ADVANCED TRAINING</div>
-              <div className="text-right md:w-32">
-                <a href="#" className="hover:underline">
-                  MORE +
-                </a>
-              </div>
-            </div>
-
-            <div className="flex flex-col md:flex-row justify-between py-6 border-b border-black">
-              <div className="text-xl font-normal">COMMUNITY OUTREACH</div>
-              <div className="text-right">FREE PROGRAMS</div>
-              <div className="text-right md:w-32">
-                <a href="#" className="hover:underline">
-                  MORE +
-                </a>
-              </div>
-            </div>
+              );
+            })}
           </div>
 
           {/* Programs Grid */}
-          <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div>
-              <img
-                src="/placeholder.svg?height=400&width=400"
-                alt="Prep + Practice"
-                className="w-full aspect-square object-cover mb-4"
-              />
-              <h3 className="text-xl font-normal">PREP + PRACTICE</h3>
-              <p className="text-sm mt-2">Weekly technique classes for all levels</p>
-            </div>
-            <div>
-              <img
-                src="/placeholder.svg?height=400&width=400"
-                alt="Summer Intensive"
-                className="w-full aspect-square object-cover mb-4"
-              />
-              <h3 className="text-xl font-normal">SUMMER INTENSIVE</h3>
-              <p className="text-sm mt-2">Immersive workshop series</p>
-            </div>
-            <div>
-              <img
-                src="/placeholder.svg?height=400&width=400"
-                alt="Youth Dance"
-                className="w-full aspect-square object-cover mb-4"
-              />
-              <h3 className="text-xl font-normal">YOUTH DANCE</h3>
-              <p className="text-sm mt-2">Creative movement for young dancers</p>
-            </div>
-          </div>
+          {/* <div className="mt-8 sm:mt-12 md:mt-16 grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+            {programs.map((program) => {
+              const textColor = program.color === 'peacock-teal' ? 'text-peacock-teal' : 
+                              program.color === 'peacock-purple' ? 'text-peacock-purple' :
+                              program.color === 'peacock-blue' ? 'text-peacock-blue' : 'text-peacock-gold';
+
+              return (
+                <div key={program.title}>
+                  <img
+                    src={program.image}
+                    alt={program.title}
+                    className="w-full aspect-square object-cover mb-3 md:mb-4"
+                  />
+                  <h3 className={`text-base sm:text-lg md:text-xl font-normal ${textColor}`}>{program.title}</h3>
+                  <p className="text-sm mt-2">{program.description}</p>
+                </div>
+              );
+            })}
+          </div> */}
         </div>
       </main>
     </div>

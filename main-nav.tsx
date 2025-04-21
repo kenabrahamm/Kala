@@ -1,5 +1,4 @@
 import Link from "next/link"
-import { RaccoonIcon } from "./raccoon-icon"
 
 export function MainNav() {
   return (
@@ -23,8 +22,7 @@ export function MainNav() {
         >
           Performances
         </Link>
-        <div className="ml-auto flex items-center">
-          <RaccoonIcon className="mr-2 text-peacock-gold" />
+        <div className="ml-auto">
           <Link href="/" className="py-4 px-6 border-l border-black hover:bg-gray-100 transition-colors">
             Kala Collective
           </Link>

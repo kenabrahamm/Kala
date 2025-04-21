@@ -82,7 +82,7 @@ export const teamMembers: TeamMember[] = [
     type: 'board'
   },
   {
-    name: { first: 'NASH', last: '' },
+    name: { first: 'NASH', last: 'SAMJI' },
     role: {
       department: 'BOARD',
       title: 'BOARD MEMBER'

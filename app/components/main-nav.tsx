@@ -17,7 +17,7 @@ export function MainNav() {
 
   const links = [
     { href: '/about', label: 'About', hoverColor: 'hover:bg-peacock-teal' },
-    { href: '/programs/prep-practice', label: 'Prep + Practice', hoverColor: 'hover:bg-peacock-purple' },
+    { href: '/programs', label: 'Programs', hoverColor: 'hover:bg-peacock-purple' },
     { href: '/performances', label: 'Performances', hoverColor: 'hover:bg-peacock-blue' }
   ]
 
