@@ -81,7 +81,7 @@ export default function PrepPracticePage() {
         </div>
         <div className="w-full md:w-1/2 relative">
           <img
-            src="/space.jpg"
+            src="/PP2025.png"
             alt="Prep + Practice dance class"
             className="w-full h-full object-cover"
           />
