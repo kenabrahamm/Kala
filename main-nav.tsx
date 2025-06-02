@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 
 export function MainNav() {
   return (
@@ -23,8 +24,15 @@ export function MainNav() {
           Performances
         </Link>
         <div className="ml-auto">
-          <Link href="/" className="py-4 px-6 border-l border-black hover:bg-gray-100 transition-colors">
-            Kala Collective
+          <Link href="/" className="py-4 px-6 border-l border-black hover:bg-gray-100 transition-colors flex items-center gap-2">
+            <span>Kala Collective</span>
+            <Image
+              src="/logo.png"
+              alt="Kala Collective Logo"
+              width={24}
+              height={24}
+              className="w-6 h-6 object-contain"
+            />
           </Link>
         </div>
       </div>

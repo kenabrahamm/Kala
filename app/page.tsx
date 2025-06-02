@@ -17,6 +17,15 @@ export default function Home() {
           <div className="w-full md:w-1/2 p-4 md:p-16 flex flex-col">
             <div className="flex-grow pt-8 md:pt-0">
               <h1 className="text-5xl sm:text-6xl md:text-[8rem] leading-[0.9] font-normal tracking-tight">
+                <div className="mb-1 md:mb-2">
+                  <Image
+                    src="/logo.png"
+                    alt="Kala Collective Logo"
+                    width={200}
+                    height={200}
+                    className="w-20 h-20 sm:w-32 sm:h-32 md:w-48 md:h-48 object-contain"
+                  />
+                </div>
                 Kala
                 <br />
                 Collective
@@ -52,32 +61,39 @@ export default function Home() {
           <div className="flex flex-col md:flex-row gap-6 md:gap-12">
             <div className="w-full md:w-2/3">
               <p className="text-sm sm:text-base md:text-lg mb-6 space-y-4">
-                Join us for "Prep+Practice," a unique initiative offered by Kala Dance Collective, designed to deepen your understanding and practice of Bharatanatyam. This program, led by artist, teacher, and choreographer Atri Nundy, comprises intensive classes focusing on the preparation for the practice of Bharatanatyam, with an emphasis on the exploration of its grammar and technique.
+                Prep + Practice is a free program designed for intermediate and advanced Bharatanatyam dancers in Toronto. Led by artist, teacher, and choreographer Atri Nundy. Building on last year’s program, Prep + Practice returns with a continued focus on technical foundations, stamina, and safe-dance practices. Through comprehensive warm-ups, form-focused exercises, and exploratory adavu work, dancers will deepen their understanding of Bharatanatyam’s grammar and movement principles.
                 <br/><br/>
-                "Prep+Practice" is an opportunity for intermediate and advanced Bharatanatyam dancers; from all banis, to come together, learn, and grow in a supportive and community-oriented environment.
+                Open to dancers from all banis, this training series invites participants into a supportive and community-oriented space where they can refine their form with precision and care. Hosted at The Citadel: Ross Centre for Dance, Prep + Practice aims to cultivate a dedicated environment where dancers can push their boundaries, connect with peers, and sustain their artistic journeys through disciplined, expressive practice.
                 <br/><br/>
-                The classes aim to build a strong foundation through comprehensive warm-ups, form-focused exercises, and an exploratory adavu practice. 
-                Kala Dance Collective aims to foster a supportive community for Bharatantyam dancers to practice and flourish in Toronto.
-                Full schedule and registrations opening soon. 
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-8 mb-6 md:mb-8">
                 <div className="border-t border-peacock-teal pt-4">
                   <h3 className="text-base md:text-lg font-bold mb-2 text-peacock-teal">Schedule</h3>
                   <p className="text-sm md:text-base">
-                    To be announced!
+                    JULY 2025:
+                
+                    <ul>
+                      <li>Sunday, July 6, 2025</li>
+                      <li>Sunday, July 13, 2025</li>
+                      <li>Saturday, July 26, 2025</li>
+                    </ul>
                   </p>
                 </div>
+
+              
                 <div className="border-t border-peacock-purple pt-4">
                   <h3 className="text-base md:text-lg font-bold mb-2 text-peacock-purple">Location</h3>
                   <p className="text-sm md:text-base">
-                    To be announced!
+                    The Citadel: Ross Centre for Dance
+                    <br/>
+                    304 Parliament St, Toronto
                   </p>
                 </div>
                 <div className="border-t border-peacock-blue pt-4">
                   <h3 className="text-base md:text-lg font-bold mb-2 text-peacock-blue">Cost</h3>
                   <p className="text-sm md:text-base">
-                    Drop-in: Free!
+                     Free or PWYC
                   </p>
                 </div>
               </div>
@@ -92,7 +108,7 @@ export default function Home() {
             <div className="w-full md:w-1/3 mt-6 md:mt-0">
               <div className="relative aspect-[3/4]">
                 <img
-                  src="/space.jpg"
+                  src="/PP2025.png"
                   alt="Prep + Practice class"
                   className="w-full h-full object-cover"
                 />

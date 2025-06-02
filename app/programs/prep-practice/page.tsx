@@ -21,37 +21,35 @@ export default function PrepPracticePage() {
 
             <div className="mb-8">
               <h2 className="text-xl font-normal mb-2 text-peacock-purple">PROGRAM DETAILS</h2>
-              <p className="text-lg mb-6">
-              Join us for "Prep+Practice," a unique initiative offered by Kala Dance Collective, designed to deepen your understanding and practice of Bharatanatyam. This program, led by artist, teacher, and choreographer Atri Nundy, comprises intensive classes focusing on the preparation for the practice of Bharatanatyam, with an emphasis on the exploration of its grammar and technique.
-              <br/>
-              <br/>
-              "Prep+Practice" is an opportunity for intermediate and advanced Bharatanatyam dancers; from all banis, to come together, learn, and grow in a supportive and community-oriented environment.
-              <br/>
-              <br/>
-              The classes aim to build a strong foundation through comprehensive warm-ups, form-focused exercises, and an exploratory adavu practice. 
-              Kala Dance Collective aims to foster a supportive community for Bharatantyam dancers to practice and flourish in Toronto.
-              Full schedule and registrations opening soon. 
-
+              <p className="text-sm sm:text-base md:text-lg mb-6 space-y-4">
+                Prep + Practice is a free program designed for intermediate and advanced Bharatanatyam dancers in Toronto. Led by artist, teacher, and choreographer Atri Nundy. Building on last year's program, Prep + Practice returns with a continued focus on technical foundations, stamina, and safe-dance practices. Through comprehensive warm-ups, form-focused exercises, and exploratory adavu work, dancers will deepen their understanding of Bharatanatyam's grammar and movement principles.
+                <br/><br/>
+                Open to dancers from all banis, this training series invites participants into a supportive and community-oriented space where they can refine their form with precision and care. Hosted at The Citadel: Ross Centre for Dance, Prep + Practice aims to cultivate a dedicated environment where dancers can push their boundaries, connect with peers, and sustain their artistic journeys through disciplined, expressive practice.
               </p>
             </div>
 
             <div className="mb-8">
               <h2 className="text-xl font-normal mb-2 text-peacock-teal">SCHEDULE</h2>
               <div className="border-t border-peacock-teal">
-                <div className="flex justify-between py-4 border-b border-peacock-teal">
-                  <div className="">To be announced</div>
-                 
+                <div className="py-4 border-b border-peacock-teal">
+                  <p className="text-sm md:text-base">
+                    JULY 2025, all sessions 5-7 PM
+                    <ul className="mt-2">
+                      <li>Sunday, July 6, 2025</li>
+                      <li>Sunday, July 13, 2025</li>
+                      <li>Saturday, July 26, 2025</li>
+                    </ul>
+                  </p>
                 </div>
-                
               </div>
             </div>
 
             <div className="mb-8">
               <h2 className="text-xl font-normal mb-2 text-peacock-blue">LOCATION</h2>
               <p>
-                To be announced
+                The Citadel: Ross Centre for Dance
                 <br />
-            
+                304 Parliament St, Toronto
               </p>
               <div className="mt-2">
                 
@@ -63,7 +61,7 @@ export default function PrepPracticePage() {
               <div className="border-t border-peacock-gold">
                 <div className="flex justify-between py-4 border-b border-peacock-gold">
                   <div>Drop-in</div>
-                  <div>Free! </div>
+                  <div>Free or PWYC</div>
                 </div>
            
               </div>
@@ -71,12 +69,12 @@ export default function PrepPracticePage() {
 
             <div>
               <a
-                // href="https://forms.google.com"
+                href="https://forms.gle/MNG3CfVmit7vHepe8"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block border border-peacock-purple bg-peacock-purple text-white px-8 py-3 hover:bg-white hover:text-peacock-purple transition-colors"
               >
-                Coming Soon
+                Register Now
               </a>
             </div>
           </div>

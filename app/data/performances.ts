@@ -64,7 +64,7 @@ export const performances: Performance[] = [
       "When these are destroyed, one achieves seamless alignment with the universe. The work examines the duality that Shiva represents, and the cyclical and intimate nature of creation and destruction."
     ],
     color: "peacock-purple",
-    image: "/Nirguna Jess Bullock (3).jpg",
+    image: "/nirguna-jess-bullock.jpg",
     tag: "Repertoire",
     monthYear: "November 2021"
   },
