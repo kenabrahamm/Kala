@@ -1,6 +1,5 @@
 import { MainNav } from "@/app/components/main-nav"
 import { TorontoSkyline } from "@/app/components/toronto-skyline"
-import { RaccoonIcon } from "@/app/components/raccoon-icon"
 import { performances } from "@/app/data/performances"
 import { Footer } from "@/app/components/footer"
 export default function PerformancesPage() {

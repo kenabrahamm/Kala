@@ -1,6 +1,8 @@
 import Link from "next/link"
 import { MainNav } from "@/app/components/main-nav"
 import { TorontoSkyline } from "@/app/components/toronto-skyline"
+import { Button } from "@/app/components/ui/button"
+import { Separator } from "@/app/components/ui/separator"
 
 export default function PrepPracticePage() {
   return (
@@ -25,20 +27,30 @@ export default function PrepPracticePage() {
                 Prep + Practice is a free program designed for intermediate and advanced Bharatanatyam dancers in Toronto. Led by artist, teacher, and choreographer Atri Nundy. Building on last year's program, Prep + Practice returns with a continued focus on technical foundations, stamina, and safe-dance practices. Through comprehensive warm-ups, form-focused exercises, and exploratory adavu work, dancers will deepen their understanding of Bharatanatyam's grammar and movement principles.
                 <br/><br/>
                 Open to dancers from all banis, this training series invites participants into a supportive and community-oriented space where they can refine their form with precision and care. Hosted at The Citadel: Ross Centre for Dance, Prep + Practice aims to cultivate a dedicated environment where dancers can push their boundaries, connect with peers, and sustain their artistic journeys through disciplined, expressive practice.
+                <br/><br/>
+                <span className="block font-semibold text-peacock-blue mt-4">THIS MONTH:</span> We’re thrilled to be collaborating with Nova Dance to offer Prep+Practice (Aug 24th) as part of their Deep End Week programming running at The Theatre Centre from Aug 18-24!
               </p>
             </div>
 
             <div className="mb-8">
-              <h2 className="text-xl font-normal mb-2 text-peacock-teal">SCHEDULE</h2>
+              <h2 className="text-xl font-normal text-peacock-teal">SCHEDULE</h2>
               <div className="border-t border-peacock-teal">
-                <div className="py-4 border-b border-peacock-teal">
+                <div className="border-b border-peacock-teal">
                   <p className="text-sm md:text-base">
-                    JULY 2025, all sessions 5-7 PM
-                    <ul className="mt-2">
-                      <li>Sunday, July 6, 2025</li>
-                      <li>Sunday, July 13, 2025</li>
-                      <li>Saturday, July 26, 2025</li>
+                    <span className="font-bold mt-6 block">JULY 2025:</span>
+                    <ul className="p-4 space-y-2">
+                      <li><span className="font-bold">Sunday, July 6, 2025</span> at The Citadel: Ross Centre for Dance</li>
+                      <li><span className="font-bold">Sunday, July 13, 2025</span> at The Citadel: Ross Centre for Dance</li>
+                      <li><span className="font-bold">Saturday, July 26, 2025</span> at The Citadel: Ross Centre for Dance</li>
                     </ul>
+                    <Separator className="my-4" />
+                    <span className="font-bold">AUGUST 2025:</span>
+                    <ul className="p-4 space-y-2">
+                      <li><span className="font-bold">Sunday, August 10, 2025</span> at The Fifth Dance</li>
+                      <li><span className="font-bold">Sunday, August 17, 2025</span> at The Citadel: Ross Centre for Dance</li>
+                      <li><span className="font-bold">Sunday, August 24, 2025</span> at The Theatre Centre (Deep End Week Edition)</li>
+                    </ul>
+                 
                   </p>
                 </div>
               </div>
@@ -46,10 +58,9 @@ export default function PrepPracticePage() {
 
             <div className="mb-8">
               <h2 className="text-xl font-normal mb-2 text-peacock-blue">LOCATION</h2>
-              <p>
-                The Citadel: Ross Centre for Dance
-                <br />
-                304 Parliament St, Toronto
+              <p className="text-sm md:text-base">
+                For August, see schedule above for locations.<br/>
+                July sessions: The Citadel: Ross Centre for Dance, 304 Parliament St, Toronto
               </p>
               <div className="mt-2">
                 
@@ -68,14 +79,19 @@ export default function PrepPracticePage() {
             </div>
 
             <div>
-              <a
-                href="https://forms.gle/MNG3CfVmit7vHepe8"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block border border-peacock-purple bg-peacock-purple text-white px-8 py-3 hover:bg-white hover:text-peacock-purple transition-colors"
-              >
-                Register Now
-              </a>
+              <Button className="bg-peacock-purple text-white hover:bg-peacock-blue rounded-none  hover:text-white mr-2"> 
+                <Link href="https://forms.gle/MNG3CfVmit7vHepe8" target="_blank" rel="noopener noreferrer">
+                  Register for July Sessions
+                </Link>
+              </Button>
+              <Button className="bg-peacock-blue text-white hover:bg-peacock-purple rounded-none  hover:text-white">
+                <Link href="https://forms.gle/JbrFvsiBEq6MYibA8" target="_blank" rel="noopener noreferrer">
+                  Register for August Sessions
+                </Link>
+              </Button>
+            
+              
+            
             </div>
           </div>
         </div>

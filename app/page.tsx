@@ -6,6 +6,7 @@ import { performances } from "@/app/data/performances"
 import { teamMembers } from "@/app/data/team"
 import { TeamMemberCard } from "@/app/components/team-member-card"
 import { Footer } from "@/app/components/footer"
+import { Separator } from "@/ui/separator"
 
 export default function Home() {
   return (
@@ -68,33 +69,28 @@ export default function Home() {
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-8 mb-6 md:mb-8">
-                <div className="border-t border-peacock-teal pt-4">
+                <div className="border-t border-peacock-teal pt-4 sm:col-span-2">
                   <h3 className="text-base md:text-lg font-bold mb-2 text-peacock-teal">Schedule</h3>
                   <p className="text-sm md:text-base">
-                    JULY 2025:
-                
-                    <ul>
-                      <li>Sunday, July 6, 2025</li>
-                      <li>Sunday, July 13, 2025</li>
-                      <li>Saturday, July 26, 2025</li>
+                    <span className="font-bold mt-6 block">JULY 2025:</span>
+                    <ul className="p-4 space-y-2">
+                      <li><span className="font-bold">Sunday, July 6, 2025</span> at The Citadel: Ross Centre for Dance</li>
+                      <li><span className="font-bold">Sunday, July 13, 2025</span> at The Citadel: Ross Centre for Dance</li>
+                      <li><span className="font-bold">Saturday, July 26, 2025</span> at The Citadel: Ross Centre for Dance</li>
                     </ul>
-                  </p>
-                </div>
-
-              
-                <div className="border-t border-peacock-purple pt-4">
-                  <h3 className="text-base md:text-lg font-bold mb-2 text-peacock-purple">Location</h3>
-                  <p className="text-sm md:text-base">
-                    The Citadel: Ross Centre for Dance
-                    <br/>
-                    304 Parliament St, Toronto
+                    <Separator className="my-4" />
+                    <span className="font-bold">AUGUST 2025:</span>
+                    <ul className="p-4 space-y-2">
+                      <li><span className="font-bold">Sunday, August 10, 2025</span> at The Fifth Dance</li>
+                      <li><span className="font-bold">Sunday, August 17, 2025</span> at The Citadel: Ross Centre for Dance</li>
+                      <li><span className="font-bold">Sunday, August 24, 2025</span> at The Theatre Centre (Deep End Week)</li>
+                    </ul>
+                 
                   </p>
                 </div>
                 <div className="border-t border-peacock-blue pt-4">
                   <h3 className="text-base md:text-lg font-bold mb-2 text-peacock-blue">Cost</h3>
-                  <p className="text-sm md:text-base">
-                     Free or PWYC
-                  </p>
+                  <p className="text-sm md:text-base">Free or PWYC</p>
                 </div>
               </div>
 
