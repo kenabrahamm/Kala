@@ -46,9 +46,9 @@ export default function PrepPracticePage() {
                     <Separator className="my-4" />
                     <span className="font-bold">AUGUST 2025:</span>
                     <ul className="p-4 space-y-2">
-                      <li><span className="font-bold">Sunday, August 10, 2025</span> at The Fifth Dance</li>
-                      <li><span className="font-bold">Sunday, August 17, 2025</span> at The Citadel: Ross Centre for Dance</li>
-                      <li><span className="font-bold">Sunday, August 24, 2025</span> at The Theatre Centre (Deep End Week Edition)</li>
+                      <li><span className="font-bold">Sunday, August 10, 2025</span> at The Fifth Dance (366 Adelaide St E, Unit 120)</li>
+                      <li><span className="font-bold">Sunday, August 17, 2025</span> at The Citadel: Ross Centre for Dance (304 Parliament St)</li>
+                      <li><span className="font-bold">Sunday, August 24, 2025</span> at The Theatre Centre - Deep End Week Edition(1115 Queen St W)</li>
                     </ul>
                  
                   </p>
@@ -59,8 +59,7 @@ export default function PrepPracticePage() {
             <div className="mb-8">
               <h2 className="text-xl font-normal mb-2 text-peacock-blue">LOCATION</h2>
               <p className="text-sm md:text-base">
-                For August, see schedule above for locations.<br/>
-                July sessions: The Citadel: Ross Centre for Dance, 304 Parliament St, Toronto
+                
               </p>
               <div className="mt-2">
                 
