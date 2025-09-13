@@ -3,6 +3,7 @@ import { MainNav } from "@/app/components/main-nav"
 import { TorontoSkyline } from "@/app/components/toronto-skyline"
 import { Button } from "@/app/components/ui/button"
 import { Separator } from "@/app/components/ui/separator"
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/ui/accordion"
 
 export default function PrepPracticePage() {
   return (
@@ -33,27 +34,58 @@ export default function PrepPracticePage() {
             </div>
 
             <div className="mb-8">
-              <h2 className="text-xl font-normal text-peacock-teal">SCHEDULE</h2>
-              <div className="border-t border-peacock-teal">
-                <div className="border-b border-peacock-teal">
-                  <p className="text-sm md:text-base">
-                    <span className="font-bold mt-6 block">JULY 2025:</span>
-                    <ul className="p-4 space-y-2">
+              <h2 className="text-xl font-normal text-peacock-teal mb-4">SCHEDULE</h2>
+              <Accordion type="multiple" className="w-full">
+                <AccordionItem value="july-2025" className="border border-peacock-teal">
+                  <AccordionTrigger className="px-4 py-4 text-left font-bold text-peacock-teal hover:no-underline">
+                    JULY 2025 (5PM-7PM)
+                  </AccordionTrigger>
+                  <AccordionContent className="px-4 pb-4">
+                    <ul className="space-y-2">
                       <li><span className="font-bold">Sunday, July 6, 2025</span> at The Citadel: Ross Centre for Dance</li>
                       <li><span className="font-bold">Sunday, July 13, 2025</span> at The Citadel: Ross Centre for Dance</li>
                       <li><span className="font-bold">Saturday, July 26, 2025</span> at The Citadel: Ross Centre for Dance</li>
                     </ul>
-                    <Separator className="my-4" />
-                    <span className="font-bold">AUGUST 2025:</span>
-                    <ul className="p-4 space-y-2">
+                  </AccordionContent>
+                </AccordionItem>
+                <AccordionItem value="august-2025" className="border border-peacock-teal">
+                  <AccordionTrigger className="px-4 py-4 text-left font-bold text-peacock-teal hover:no-underline">
+                    AUGUST 2025 (5PM-7PM)
+                  </AccordionTrigger>
+                  <AccordionContent className="px-4 pb-4">
+                    <ul className="space-y-2">
                       <li><span className="font-bold">Sunday, August 10, 2025</span> at The Fifth Dance (366 Adelaide St E, Unit 120)</li>
-                      <li><span className="font-bold">Sunday, August 17, 2025</span> at The Citadel: Ross Centre for Dance (304 Parliament St)</li>
-                      <li><span className="font-bold">Sunday, August 24, 2025</span> at The Theatre Centre - Deep End Week Edition(1115 Queen St W)</li>
+                      <li><span className="font-bold">Sunday, August 17, 2025</span> at The Citadel (304 Parliament St)</li>
+                      <li><span className="font-bold">Sunday, August 24, 2025</span> at The Theatre Centre - Deep End Week (1115 Queen St W)</li>
                     </ul>
-                 
-                  </p>
-                </div>
-              </div>
+                  </AccordionContent>
+                </AccordionItem>
+                
+                    <AccordionItem value="september-2025" className="border border-peacock-teal" defaultValue="september-2025">
+                      <AccordionTrigger className="px-4 py-4 text-left font-bold text-peacock-teal hover:no-underline">
+                        SEPTEMBER 2025 (5PM-7PM)
+                      </AccordionTrigger>
+                      <AccordionContent className="px-4 pb-4">
+                        <ul className="space-y-2">
+                          <li><span className="font-bold">Sunday, September 7, 2025</span> at The Fifth Dance (366 Adelaide St E, Unit 120)</li>
+                          <li><span className="font-bold">Sunday, September 14, 2025</span> at The Citadel (304 Parliament St)</li>
+                          <li><span className="font-bold">Sunday, September 21, 2025</span> at The Theatre Centre - Deep End Week (1115 Queen St W)</li>
+                        </ul>
+                      </AccordionContent>
+                    </AccordionItem>
+                    <AccordionItem value="october-2025" className="border border-peacock-teal" defaultValue="october-2025">
+                      <AccordionTrigger className="px-4 py-4 text-left font-bold text-peacock-teal hover:no-underline">
+                        OCTOBER 2025 (5PM-7PM)
+                      </AccordionTrigger>
+                      <AccordionContent className="px-4 pb-4">
+                        <ul className="space-y-2">
+                          <li><span className="font-bold">Sunday, October 5, 2025</span> at The Fifth Dance (366 Adelaide St E, Unit 120)</li>
+                          <li><span className="font-bold">Sunday, October 19, 2025</span> at The Citadel (304 Parliament St)</li>
+                          <li><span className="font-bold">Sunday, October 26, 2025</span> at The Theatre Centre - Deep End Week (1115 Queen St W)</li>
+                        </ul>
+                      </AccordionContent>
+                    </AccordionItem>
+              </Accordion>
             </div>
 
             <div className="mb-8">
