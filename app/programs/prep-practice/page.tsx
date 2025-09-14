@@ -67,9 +67,9 @@ export default function PrepPracticePage() {
                       </AccordionTrigger>
                       <AccordionContent className="px-4 pb-4">
                         <ul className="space-y-2">
-                          <li><span className="font-bold">Sunday, September 7, 2025</span> at The Fifth Dance (366 Adelaide St E, Unit 120)</li>
-                          <li><span className="font-bold">Sunday, September 14, 2025</span> at The Citadel (304 Parliament St)</li>
-                          <li><span className="font-bold">Sunday, September 21, 2025</span> at The Theatre Centre - Deep End Week (1115 Queen St W)</li>
+                          <li><span className="font-bold">Sunday, September 7, 2025</span> at The Citadel: Ross Centre for Dance</li>
+                          <li><span className="font-bold">Sunday, September 14, 2025</span> at The Citadel: Ross Centre for Dance</li>
+                          <li><span className="font-bold">Sunday, September 21, 2025</span> at The Citadel: Ross Centre for Dance</li>
                         </ul>
                       </AccordionContent>
                     </AccordionItem>
@@ -79,9 +79,9 @@ export default function PrepPracticePage() {
                       </AccordionTrigger>
                       <AccordionContent className="px-4 pb-4">
                         <ul className="space-y-2">
-                          <li><span className="font-bold">Sunday, October 5, 2025</span> at The Fifth Dance (366 Adelaide St E, Unit 120)</li>
-                          <li><span className="font-bold">Sunday, October 19, 2025</span> at The Citadel (304 Parliament St)</li>
-                          <li><span className="font-bold">Sunday, October 26, 2025</span> at The Theatre Centre - Deep End Week (1115 Queen St W)</li>
+                          <li><span className="font-bold">Sunday, October 5, 2025</span> at The Citadel: Ross Centre for Dance</li>
+                          <li><span className="font-bold">Sunday, October 19, 2025</span> at The Citadel: Ross Centre for Dance</li>
+                          <li><span className="font-bold">Sunday, October 26, 2025</span> at The Citadel: Ross Centre for Dance</li>
                         </ul>
                       </AccordionContent>
                     </AccordionItem>
