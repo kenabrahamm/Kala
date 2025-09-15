@@ -29,7 +29,7 @@ export default function PrepPracticePage() {
                 <br/><br/>
                 Open to dancers from all banis, this training series invites participants into a supportive and community-oriented space where they can refine their form with precision and care. Hosted at The Citadel: Ross Centre for Dance, Prep + Practice aims to cultivate a dedicated environment where dancers can push their boundaries, connect with peers, and sustain their artistic journeys through disciplined, expressive practice.
                 <br/><br/>
-                <span className="block font-semibold text-peacock-blue mt-4">THIS MONTH:</span> We’re thrilled to be collaborating with Nova Dance to offer Prep+Practice (Aug 24th) as part of their Deep End Week programming running at The Theatre Centre from Aug 18-24!
+               
               </p>
             </div>
 
@@ -111,13 +111,13 @@ export default function PrepPracticePage() {
 
             <div>
               <Button className="bg-peacock-purple text-white hover:bg-peacock-blue rounded-none  hover:text-white mr-2"> 
-                <Link href="https://forms.gle/MNG3CfVmit7vHepe8" target="_blank" rel="noopener noreferrer">
-                  Register for July Sessions
+                <Link href="https://forms.gle/mrntrDTzhE6TmFp97" target="_blank" rel="noopener noreferrer">
+                  Register for September Sessions
                 </Link>
               </Button>
               <Button className="bg-peacock-blue text-white hover:bg-peacock-purple rounded-none  hover:text-white">
-                <Link href="https://forms.gle/JbrFvsiBEq6MYibA8" target="_blank" rel="noopener noreferrer">
-                  Register for August Sessions
+                <Link href="https://forms.gle/zcpHQ6xKYQ2W4LuC6" target="_blank" rel="noopener noreferrer">
+                  Register for October Sessions
                 </Link>
               </Button>
             
