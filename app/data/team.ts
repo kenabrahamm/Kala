@@ -91,16 +91,5 @@ export const teamMembers: TeamMember[] = [
     color: 'peacock-gold',
     bio: "Nash is a seasoned entrepreneur with a strong foundation in business and finance, bringing entrepreneurial insight and strategic thinking to every project she touches. With decades of experience launching and running successful family businesses, she continues to lead and grow ventures with the same passion and dedication.\n\nHer deep expertise in logistics and process optimization ensures that projects not only run smoothly but are set up for long-term success. Nash's drive to turn ideas into reality is matched by her unwavering commitment to seeing communities thrive. She is especially inspired by opportunities that bring people together through shared experiences.\n\nOutside of work, Nash is a devoted explorer of music, performance, and culture. She enjoys immersing herself in various genres and artistic expressions, always seeking to learn and appreciate something new. Nash is also an avid athlete who plays a variety of sports and has won several local tournaments, showcasing her competitive spirit and love for physical activity.\n\nAt her core, Nash is passionate about building inclusive spaces where people can connect, create, and experience the beauty of art, movement, and community.",
     type: 'board'
-  },
-  {
-    name: { first: 'DONYA', last: 'SANDHU' },
-    role: {
-      department: 'BOARD',
-      title: 'BOARD MEMBER'
-    },
-    image: '/Donya Headshot.JPG',
-    color: 'peacock-gold',
-    bio: "Donya is a passionate and dedicated Bharatanatyam artist with over 16 years of rigorous training under the esteemed Guru Lata Pada at Sampradaya Dance Academy. Upon graduation, Donya joined Sampradaya Dance Creations as a company dancer, further refining her artistry and performing in several prestigious productions.\n\nBeyond Canada, Donya has expanded her artistic horizons through international workshops and residencies. In 2015, she trained in the UK at Milapfest, studying under Guru Bragha Bessell and Rama Vaidyanathan. She has also performed in various productions in Punyah Krishna, choreographed by the renowned Parshwanath Upadhye, and Mandala with Sampradaya Dance Creations.\n\nIn addition to her deep commitment to dance, Donya brings a strong background in health sciences and business. She holds a Bachelor of Honours in Health Sciences and a Master's in Biotechnology from McMaster University and is currently pursuing an MBA at Kellogg School of Management. Her unique blend of artistic excellence and scientific acumen allows her to approach leadership at Kala Dance Collective with a multidisciplinary perspective, ensuring a balance of creative vision and strategic growth. Donya is committed to expanding access to Bharatanatyam, fostering innovation in dance presentation, and strengthening Kala Dance Collective's presence in the global arts community.",
-    type: 'board'
   }
 ]; 
