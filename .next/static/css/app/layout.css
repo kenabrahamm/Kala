@@ -1789,6 +1789,9 @@ video {
 .text-white\/60 {
   color: rgb(255 255 255 / 0.6);
 }
+.underline {
+  text-decoration-line: underline;
+}
 .underline-offset-4 {
   text-underline-offset: 4px;
 }
@@ -3263,6 +3266,14 @@ video {
 
   .md\:w-auto {
     width: auto;
+  }
+
+  .md\:w-3\/5 {
+    width: 60%;
+  }
+
+  .md\:w-2\/5 {
+    width: 40%;
   }
 
   .md\:max-w-\[420px\] {

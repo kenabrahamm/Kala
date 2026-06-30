@@ -128,9 +128,9 @@ export default function PrepPracticePage() {
         </div>
         <div className="w-full md:w-1/2 relative">
           <img
-            src="/PP2025.png"
-            alt="Prep + Practice dance class"
-            className="w-full h-full object-cover"
+            src="/PP2026.png"
+            alt="Prep + Practice promotional poster, August through November 2026"
+            className="w-full h-auto object-contain"
           />
           <div className="absolute bottom-8 right-8 bg-white/80 p-2 rounded-full">
             

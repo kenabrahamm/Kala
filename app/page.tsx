@@ -36,7 +36,7 @@ export default function Home() {
             </div>
             <div className="mt-6 md:mt-auto max-w-2xl">
               <p className="text-sm sm:text-base md:text-lg">
-              Our mission is to preserve and promote the rich tradition of Bharatanatyam, ensuring its vitality and relevance in contemporary contexts. We strive to support innovation, inclusivity, and dialogue within the broader artistic and cultural landscapes.
+              Kala Dance Collective is a not-for-profit arts organization creating frameworks of support for artists working within or in dialogue with South Asian classical practices. Our projects move fluidly between creation and performance, play and research, training and community-building.
               </p>
               <div className="mt-4 md:mt-6 flex items-center text-peacock-teal">
                 <span className="text-sm md:text-base">Toronto, Canada</span>
@@ -62,64 +62,84 @@ export default function Home() {
           </h2>
 
           <div className="flex flex-col md:flex-row gap-6 md:gap-12">
-            <div className="w-full md:w-2/3">
+            <div className="w-full md:w-3/5">
               <p className="text-sm sm:text-base md:text-lg mb-6 space-y-4">
-                Prep + Practice is a free program designed for intermediate and advanced Bharatanatyam dancers in Toronto. Led by artist, teacher, and choreographer Atri Nundy. Building on last year’s program, Prep + Practice returns with a continued focus on technical foundations, stamina, and safe-dance practices. Through comprehensive warm-ups, form-focused exercises, and exploratory adavu work, dancers will deepen their understanding of Bharatanatyam’s grammar and movement principles.
+                Prep + Practice is a free training series for intermediate and advanced Bharatanatyam dancers to come together and practice within a community setting in Toronto. Led by artist, teacher, and choreographer Atri Nundy, the program returns for its third year with a continued emphasis on technical foundations, stamina, and safe-dance practices.
                 <br/><br/>
-                Open to dancers from all banis, this training series invites participants into a supportive and community-oriented space where they can refine their form with precision and care. Hosted at The Citadel: Ross Centre for Dance, Prep + Practice aims to cultivate a dedicated environment where dancers can push their boundaries, connect with peers, and sustain their artistic journeys through disciplined, expressive practice.
+                Open to dancers from all banis, the sessions move through  <span className="font-bold">Prep</span>: which consists of comprehensive warm-ups and form-focused exercises, and <span className="font-bold">Practice</span>: which focuses on exploratory adavu work and jati/sequence building.
                 <br/><br/>
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-8 mb-6 md:mb-8">
                 <div className="border-t border-peacock-teal pt-4 sm:col-span-2">
                   <h3 className="text-base md:text-lg font-bold mb-2 text-peacock-teal">Schedule</h3>
-                  <Accordion type="multiple" className="w-full" defaultValue={[ "september-2025", "october-2025"]}>
-                    <AccordionItem value="july-2025" className="border border-peacock-teal">
+                  <Accordion type="multiple" className="w-full" defaultValue={["august-2026", "september-2026"]}>
+                    <AccordionItem value="august-2026" className="border border-peacock-teal">
                       <AccordionTrigger className="px-4 py-4 text-left font-bold text-peacock-teal hover:no-underline">
-                        JULY 2025 (5PM-7PM)
+                        AUGUST 2026
                       </AccordionTrigger>
                       <AccordionContent className="px-4 pb-4">
                         <ul className="space-y-2">
-                          <li><span className="font-bold">Sunday, July 6, 2025</span> at The Citadel: Ross Centre for Dance</li>
-                          <li><span className="font-bold">Sunday, July 13, 2025</span> at The Citadel: Ross Centre for Dance</li>
-                          <li><span className="font-bold">Saturday, July 26, 2025</span> at The Citadel: Ross Centre for Dance</li>
+                          <li><span className="font-bold">Sat Aug 8</span> | 2:30 PM @ Collective Space (101 Florence St)</li>
+                          <li><span className="font-bold">Sun Aug 16</span> | 5 PM @ The Citadel (304 Parliament St)</li>
+                          <li><span className="font-bold">Sun Aug 23</span> | 5 PM @ The Citadel (304 Parliament St)</li>
                         </ul>
+                        <p className="mt-4 text-sm md:text-base">
+                          <Link href="https://forms.gle/sfCxzo2p4wcJGvDaA" target="_blank" rel="noopener noreferrer" className="underline text-peacock-teal">
+                            Register
+                          </Link>
+                        </p>
                       </AccordionContent>
                     </AccordionItem>
-                    <AccordionItem value="august-2025" className="border border-peacock-teal">
+                    <AccordionItem value="september-2026" className="border border-peacock-teal">
                       <AccordionTrigger className="px-4 py-4 text-left font-bold text-peacock-teal hover:no-underline">
-                        AUGUST 2025 (5PM-7PM)
+                        SEPTEMBER 2026
                       </AccordionTrigger>
                       <AccordionContent className="px-4 pb-4">
                         <ul className="space-y-2">
-                          <li><span className="font-bold">Sunday, August 10, 2025</span> at The Fifth Dance (366 Adelaide St E, Unit 120)</li>
-                          <li><span className="font-bold">Sunday, August 17, 2025</span> at The Citadel (304 Parliament St)</li>
-                          <li><span className="font-bold">Sunday, August 24, 2025</span> at The Theatre Centre - Deep End Week (1115 Queen St W)</li>
+                          <li><span className="font-bold">Sun Sept 6</span> | 5 PM @ The Citadel (304 Parliament St)</li>
+                          <li><span className="font-bold">Sun Sept 13</span> | 5 PM @ The Fifth (366 Adelaide St E)</li>
+                          <li><span className="font-bold">Sun Sept 20</span> | 5 PM @ The Citadel (304 Parliament St)</li>
                         </ul>
+                        <p className="mt-4 text-sm md:text-base">
+                          <Link href="https://forms.gle/afsgGqpRxRxhhXm88" target="_blank" rel="noopener noreferrer" className="underline text-peacock-teal">
+                            Register
+                          </Link>
+                        </p>
                       </AccordionContent>
                     </AccordionItem>
-                    <AccordionItem value="september-2025" className="border border-peacock-teal" defaultValue="september-2025">
+                    <AccordionItem value="october-2026" className="border border-peacock-teal">
                       <AccordionTrigger className="px-4 py-4 text-left font-bold text-peacock-teal hover:no-underline">
-                        SEPTEMBER 2025 (5PM-7PM)
+                        OCTOBER 2026
                       </AccordionTrigger>
                       <AccordionContent className="px-4 pb-4">
                         <ul className="space-y-2">
-                          <li><span className="font-bold">Sunday, September 7, 2025</span> at The Citadel (304 Parliament St)</li>
-                          <li><span className="font-bold">Sunday, September 14, 2025</span> at The Citadel (304 Parliament St)</li>
-                          <li><span className="font-bold">Sunday, September 21, 2025</span> aat The Citadel (304 Parliament St)</li>
+                          <li><span className="font-bold">Sat Oct 10</span> | 5 PM @ The Citadel (304 Parliament St)</li>
+                          <li><span className="font-bold">Sun Oct 25</span> | 5 PM @ The Citadel (304 Parliament St)</li>
+                          <li><span className="font-bold">Sat Oct 31</span> | 4 PM @ The Citadel (304 Parliament St)</li>
                         </ul>
+                        <p className="mt-4 text-sm md:text-base">
+                          <Link href="https://forms.gle/1uNVyjJ6EQUFX6fd7" target="_blank" rel="noopener noreferrer" className="underline text-peacock-teal">
+                            Register
+                          </Link>
+                        </p>
                       </AccordionContent>
                     </AccordionItem>
-                    <AccordionItem value="october-2025" className="border border-peacock-teal" defaultValue="october-2025">
+                    <AccordionItem value="november-2026" className="border border-peacock-teal">
                       <AccordionTrigger className="px-4 py-4 text-left font-bold text-peacock-teal hover:no-underline">
-                        OCTOBER 2025 (5PM-7PM)
+                        NOVEMBER 2026
                       </AccordionTrigger>
                       <AccordionContent className="px-4 pb-4">
                         <ul className="space-y-2">
-                          <li><span className="font-bold">Sunday, October 5, 2025</span> at The Citadel (304 Parliament St)</li>
-                          <li><span className="font-bold">Sunday, October 19, 2025</span> at The Citadel (304 Parliament St)</li>
-                          <li><span className="font-bold">Sunday, October 26, 2025</span> at The Citadel (304 Parliament St)</li>
+                          <li><span className="font-bold">Sat Nov 15</span> | 5 PM @ The Citadel (304 Parliament St)</li>
+                          <li><span className="font-bold">Sat Nov 21</span> | 5 PM @ The Citadel (304 Parliament St)</li>
+                          <li><span className="font-bold">Sun Nov 22</span> | 5 PM @ The Citadel (304 Parliament St)</li>
                         </ul>
+                        <p className="mt-4 text-sm md:text-base">
+                          <Link href="https://forms.gle/FEeDkyHkbEHKytBA9" target="_blank" rel="noopener noreferrer" className="underline text-peacock-teal">
+                            Register
+                          </Link>
+                        </p>
                       </AccordionContent>
                     </AccordionItem>
                   </Accordion>
@@ -138,14 +158,12 @@ export default function Home() {
                 Learn More
               </Link>
             </div>
-            <div className="w-full md:w-1/3 mt-6 md:mt-0">
-              <div className="relative aspect-[3/4]">
-                <img
-                  src="/PP2025.png"
-                  alt="Prep + Practice class"
-                  className="w-full h-full object-cover"
-                />
-              </div>
+            <div className="w-full md:w-2/5 mt-6 md:mt-0">
+              <img
+                src="/PP2026.png"
+                alt="Prep + Practice promotional poster, August through November 2026"
+                className="w-full h-auto"
+              />
             </div>
           </div>
         </section>
