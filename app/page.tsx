@@ -84,11 +84,16 @@ export default function Home() {
                           <li><span className="font-bold">Sun Aug 16</span> | 5 PM @ The Citadel (304 Parliament St)</li>
                           <li><span className="font-bold">Sun Aug 23</span> | 5 PM @ The Citadel (304 Parliament St)</li>
                         </ul>
-                        <p className="mt-4 text-sm md:text-base">
-                          <Link href="https://forms.gle/sfCxzo2p4wcJGvDaA" target="_blank" rel="noopener noreferrer" className="underline text-peacock-teal">
+                        <div className="mt-4">
+                          <Link
+                            href="https://forms.gle/sfCxzo2p4wcJGvDaA"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-block border border-peacock-teal bg-peacock-teal text-white px-6 py-2 hover:bg-white hover:text-peacock-teal transition-colors text-sm"
+                          >
                             Register
                           </Link>
-                        </p>
+                        </div>
                       </AccordionContent>
                     </AccordionItem>
                     <AccordionItem value="september-2026" className="border border-peacock-teal">
@@ -101,11 +106,16 @@ export default function Home() {
                           <li><span className="font-bold">Sun Sept 13</span> | 5 PM @ The Fifth (366 Adelaide St E)</li>
                           <li><span className="font-bold">Sun Sept 20</span> | 5 PM @ The Citadel (304 Parliament St)</li>
                         </ul>
-                        <p className="mt-4 text-sm md:text-base">
-                          <Link href="https://forms.gle/afsgGqpRxRxhhXm88" target="_blank" rel="noopener noreferrer" className="underline text-peacock-teal">
+                        <div className="mt-4">
+                          <Link
+                            href="https://forms.gle/afsgGqpRxRxhhXm88"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-block border border-peacock-teal bg-peacock-teal text-white px-6 py-2 hover:bg-white hover:text-peacock-teal transition-colors text-sm"
+                          >
                             Register
                           </Link>
-                        </p>
+                        </div>
                       </AccordionContent>
                     </AccordionItem>
                     <AccordionItem value="october-2026" className="border border-peacock-teal">
@@ -118,11 +128,16 @@ export default function Home() {
                           <li><span className="font-bold">Sun Oct 25</span> | 5 PM @ The Citadel (304 Parliament St)</li>
                           <li><span className="font-bold">Sat Oct 31</span> | 4 PM @ The Citadel (304 Parliament St)</li>
                         </ul>
-                        <p className="mt-4 text-sm md:text-base">
-                          <Link href="https://forms.gle/1uNVyjJ6EQUFX6fd7" target="_blank" rel="noopener noreferrer" className="underline text-peacock-teal">
+                        <div className="mt-4">
+                          <Link
+                            href="https://forms.gle/1uNVyjJ6EQUFX6fd7"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-block border border-peacock-teal bg-peacock-teal text-white px-6 py-2 hover:bg-white hover:text-peacock-teal transition-colors text-sm"
+                          >
                             Register
                           </Link>
-                        </p>
+                        </div>
                       </AccordionContent>
                     </AccordionItem>
                     <AccordionItem value="november-2026" className="border border-peacock-teal">
@@ -135,11 +150,16 @@ export default function Home() {
                           <li><span className="font-bold">Sat Nov 21</span> | 5 PM @ The Citadel (304 Parliament St)</li>
                           <li><span className="font-bold">Sun Nov 22</span> | 5 PM @ The Citadel (304 Parliament St)</li>
                         </ul>
-                        <p className="mt-4 text-sm md:text-base">
-                          <Link href="https://forms.gle/FEeDkyHkbEHKytBA9" target="_blank" rel="noopener noreferrer" className="underline text-peacock-teal">
+                        <div className="mt-4">
+                          <Link
+                            href="https://forms.gle/FEeDkyHkbEHKytBA9"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-block border border-peacock-teal bg-peacock-teal text-white px-6 py-2 hover:bg-white hover:text-peacock-teal transition-colors text-sm"
+                          >
                             Register
                           </Link>
-                        </p>
+                        </div>
                       </AccordionContent>
                     </AccordionItem>
                   </Accordion>

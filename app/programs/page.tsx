@@ -28,10 +28,10 @@ export default function ProgramsPage() {
                   href={program.link}
                   className="block p-4 border-b border-black hover:bg-gray-50 transition-colors duration-200"
                 >
-                  <div className="flex flex-col gap-2 md:flex-row md:items-center md:justify-between">
+                  <div className="grid grid-cols-1 md:grid-cols-[16rem_auto_1fr] gap-2 md:gap-x-6 md:gap-y-2 md:items-center">
                     <div className={`text-lg sm:text-xl font-normal ${textColor}`}>{program.title}</div>
-                    <div className="text-sm sm:text-base text-left md:text-right mt-1 md:mt-0">{program.subtitle}</div>
-                    <div className="text-left md:text-right md:w-32 mt-2 md:mt-0">
+                    <div className="text-sm sm:text-base md:text-left whitespace-nowrap">{program.subtitle}</div>
+                    <div className="md:text-right">
                       <span className={`inline-flex items-center gap-1 text-sm sm:text-base hover:underline ${textColor}`}>
                         MORE <span className="text-base">+</span>
                       </span>

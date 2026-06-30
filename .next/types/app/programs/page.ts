@@ -1,4 +1,4 @@
-// File: /Users/Rach/Documents/Kala_website/Kala/app/programs/page.tsx
+// File: /Users/kenabraham/Documents/Kala Website 2.0/app/programs/page.tsx
 import * as entry from '../../../../app/programs/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
