@@ -64,10 +64,11 @@ export default function Home() {
           <div className="flex flex-col md:flex-row gap-6 md:gap-12">
             <div className="w-full md:w-3/5">
               <p className="text-sm sm:text-base md:text-lg mb-6 space-y-4">
-                Prep + Practice is a free training series for intermediate and advanced Bharatanatyam dancers to come together and practice within a community setting in Toronto. Led by artist, teacher, and choreographer Atri Nundy, the program returns for its third year with a continued emphasis on technical foundations, stamina, and safe-dance practices.
+                Prep + Practice is a facilitated space designed for intermediate and advanced Bharatanatyam dancers looking to return to their training and maintain a regular practice alongside peers.
                 <br/><br/>
-                Open to dancers from all banis, the sessions move through  <span className="font-bold">Prep</span>: which consists of comprehensive warm-ups and form-focused exercises, and <span className="font-bold">Practice</span>: which focuses on exploratory adavu work and jati/sequence building.
+                Led by artist, teacher, and choreographer Atri Nundy, the program returns for its third year with a continued emphasis on technical foundations, stamina, and safe-dance practices.
                 <br/><br/>
+                Open to dancers from all banis, the sessions move through <span className="font-bold">Prep</span>: which consists of comprehensive warm-ups and form-focused exercises, and <span className="font-bold">Practice</span>: which focuses on exploratory adavu work and jati/sequence building.
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-8 mb-6 md:mb-8">
@@ -147,7 +148,7 @@ export default function Home() {
                 </div>
                 <div className="border-t border-peacock-blue pt-4">
                   <h3 className="text-base md:text-lg font-bold mb-2 text-peacock-blue">Cost</h3>
-                  <p className="text-sm md:text-base">Free or PWYC</p>
+                  <p className="text-sm md:text-base">PWYC: $10 / $15 / $20</p>
                 </div>
               </div>
 

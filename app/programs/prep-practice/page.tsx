@@ -25,11 +25,11 @@ export default function PrepPracticePage() {
             <div className="mb-8">
               <h2 className="text-xl font-normal mb-2 text-peacock-purple">PROGRAM DETAILS</h2>
               <p className="text-sm sm:text-base md:text-lg mb-6 space-y-4">
-                Prep + Practice is a free program designed for intermediate and advanced Bharatanatyam dancers in Toronto. Led by artist, teacher, and choreographer Atri Nundy. Building on last year's program, Prep + Practice returns with a continued focus on technical foundations, stamina, and safe-dance practices. Through comprehensive warm-ups, form-focused exercises, and exploratory adavu work, dancers will deepen their understanding of Bharatanatyam's grammar and movement principles.
+                Prep + Practice is a facilitated space designed for intermediate and advanced Bharatanatyam dancers looking to return to their training and maintain a regular practice alongside peers.
                 <br/><br/>
-                Open to dancers from all banis, this training series invites participants into a supportive and community-oriented space where they can refine their form with precision and care. Hosted at The Citadel: Ross Centre for Dance, Prep + Practice aims to cultivate a dedicated environment where dancers can push their boundaries, connect with peers, and sustain their artistic journeys through disciplined, expressive practice.
+                Led by artist, teacher, and choreographer Atri Nundy, the program returns for its third year with a continued emphasis on technical foundations, stamina, and safe-dance practices.
                 <br/><br/>
-               
+                Open to dancers from all banis, the sessions move through <span className="font-bold">Prep</span>: which consists of comprehensive warm-ups and form-focused exercises, and <span className="font-bold">Practice</span>: which focuses on exploratory adavu work and jati/sequence building.
               </p>
             </div>
 
@@ -103,7 +103,7 @@ export default function PrepPracticePage() {
               <div className="border-t border-peacock-gold">
                 <div className="flex justify-between py-4 border-b border-peacock-gold">
                   <div>Drop-in</div>
-                  <div>Free or PWYC</div>
+                  <div>PWYC: $10 / $15 / $20</div>
                 </div>
            
               </div>
