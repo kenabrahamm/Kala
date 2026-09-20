@@ -64,16 +64,19 @@ export default function Home() {
           <div className="flex flex-col md:flex-row gap-6 md:gap-12">
             <div className="w-full md:w-3/5">
               <p className="text-sm sm:text-base md:text-lg mb-6 space-y-4">
-                Prep + Practice is a free training series for intermediate and advanced Bharatanatyam dancers to come together and practice within a community setting in Toronto. Led by artist, teacher, and choreographer Atri Nundy, the program returns for its third year with a continued emphasis on technical foundations, stamina, and safe-dance practices.
+                &ldquo;Prep+Practice&rdquo; is a facilitated class for intermediate and advanced Bharatanatyam dancers to train together, in community.
                 <br/><br/>
-                Open to dancers from all banis, the sessions move through  <span className="font-bold">Prep</span>: which consists of comprehensive warm-ups and form-focused exercises, and <span className="font-bold">Practice</span>: which focuses on exploratory adavu work and jati/sequence building.
+                Prep + Practice is a facilitated space designed for intermediate and advanced Bharatanatyam dancers looking to return to their training and maintain a regular practice alongside peers.
                 <br/><br/>
+                Led by artist, teacher, and choreographer Atri Nundy, the program returns for its third year with a continued emphasis on technical foundations, stamina, and safe-dance practices.
+                <br/><br/>
+                Open to dancers from all banis, the sessions move through <span className="font-bold">Prep</span>: which consists of comprehensive warm-ups and form-focused exercises, and <span className="font-bold">Practice</span>: which focuses on exploratory adavu work and jati/sequence building.
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-8 mb-6 md:mb-8">
                 <div className="border-t border-peacock-teal pt-4 sm:col-span-2">
                   <h3 className="text-base md:text-lg font-bold mb-2 text-peacock-teal">Schedule</h3>
-                  <Accordion type="multiple" className="w-full" defaultValue={["august-2026", "september-2026"]}>
+                  <Accordion type="multiple" className="w-full" defaultValue={["october-2026", "november-2026"]}>
                     <AccordionItem value="august-2026" className="border border-peacock-teal">
                       <AccordionTrigger className="px-4 py-4 text-left font-bold text-peacock-teal hover:no-underline">
                         AUGUST 2026
@@ -130,7 +133,7 @@ export default function Home() {
                         </ul>
                         <div className="mt-4">
                           <Link
-                            href="https://forms.gle/1uNVyjJ6EQUFX6fd7"
+                            href="https://www.eventbrite.com/e/2001773927704?aff=oddtdtcreator"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="inline-block border border-peacock-teal bg-peacock-teal text-white px-6 py-2 hover:bg-white hover:text-peacock-teal transition-colors text-sm"
@@ -152,7 +155,7 @@ export default function Home() {
                         </ul>
                         <div className="mt-4">
                           <Link
-                            href="https://forms.gle/FEeDkyHkbEHKytBA9"
+                            href="https://www.eventbrite.com/e/2001775732101?aff=oddtdtcreator"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="inline-block border border-peacock-teal bg-peacock-teal text-white px-6 py-2 hover:bg-white hover:text-peacock-teal transition-colors text-sm"
@@ -167,7 +170,7 @@ export default function Home() {
                 </div>
                 <div className="border-t border-peacock-blue pt-4">
                   <h3 className="text-base md:text-lg font-bold mb-2 text-peacock-blue">Cost</h3>
-                  <p className="text-sm md:text-base">Free or PWYC</p>
+                  <p className="text-sm md:text-base">PWYC $10 / $15 / $20</p>
                 </div>
               </div>
 

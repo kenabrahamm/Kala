@@ -20,16 +20,19 @@ export default function PrepPracticePage() {
             <div className="mb-8">
               <h2 className="text-xl font-normal mb-2 text-peacock-purple">PROGRAM DETAILS</h2>
               <p className="text-sm sm:text-base md:text-lg mb-6 space-y-4">
-                Prep + Practice is a free training series for intermediate and advanced Bharatanatyam dancers to come together and practice within a community setting in Toronto. Led by artist, teacher, and choreographer Atri Nundy, the program returns for its third year with a continued emphasis on technical foundations, stamina, and safe-dance practices.
+                &ldquo;Prep+Practice&rdquo; is a facilitated class for intermediate and advanced Bharatanatyam dancers to train together, in community.
+                <br/><br/>
+                Prep + Practice is a facilitated space designed for intermediate and advanced Bharatanatyam dancers looking to return to their training and maintain a regular practice alongside peers.
+                <br/><br/>
+                Led by artist, teacher, and choreographer Atri Nundy, the program returns for its third year with a continued emphasis on technical foundations, stamina, and safe-dance practices.
                 <br/><br/>
                 Open to dancers from all banis, the sessions move through <span className="font-bold">Prep</span>: which consists of comprehensive warm-ups and form-focused exercises, and <span className="font-bold">Practice</span>: which focuses on exploratory adavu work and jati/sequence building.
-                <br/><br/>
               </p>
             </div>
 
             <div className="mb-8">
               <h2 className="text-xl font-normal text-peacock-teal mb-4">SCHEDULE</h2>
-              <Accordion type="multiple" className="w-full" defaultValue={["august-2026", "september-2026"]}>
+              <Accordion type="multiple" className="w-full" defaultValue={["october-2026", "november-2026"]}>
                 <AccordionItem value="august-2026" className="border border-peacock-teal">
                   <AccordionTrigger className="px-4 py-4 text-left font-bold text-peacock-teal hover:no-underline">
                     AUGUST 2026
@@ -86,7 +89,7 @@ export default function PrepPracticePage() {
                     </ul>
                     <div className="mt-4">
                       <Link
-                        href="https://forms.gle/1uNVyjJ6EQUFX6fd7"
+                        href="https://www.eventbrite.com/e/2001773927704?aff=oddtdtcreator"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-block border border-peacock-teal bg-peacock-teal text-white px-6 py-2 hover:bg-white hover:text-peacock-teal transition-colors text-sm"
@@ -108,7 +111,7 @@ export default function PrepPracticePage() {
                     </ul>
                     <div className="mt-4">
                       <Link
-                        href="https://forms.gle/FEeDkyHkbEHKytBA9"
+                        href="https://www.eventbrite.com/e/2001775732101?aff=oddtdtcreator"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-block border border-peacock-teal bg-peacock-teal text-white px-6 py-2 hover:bg-white hover:text-peacock-teal transition-colors text-sm"
@@ -126,7 +129,7 @@ export default function PrepPracticePage() {
               <div className="border-t border-peacock-gold">
                 <div className="flex justify-between py-4 border-b border-peacock-gold">
                   <div>Drop-in</div>
-                  <div>Free or PWYC</div>
+                  <div>PWYC $10 / $15 / $20</div>
                 </div>
               </div>
             </div>
