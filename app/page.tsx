@@ -31,7 +31,7 @@ export default function Home() {
                   />
                 </h1>
               </div>
-              <div className="mt-3 md:mt-4">
+              <div className="mt-10 md:mt-14">
                 <p className="text-sm sm:text-base md:text-lg">
                 Kala Dance Collective is a not-for-profit arts organization creating frameworks of support for artists working within or in dialogue with South Asian classical practices. Our projects move fluidly between creation and performance, play and research, training and community-building.
                 </p>
@@ -59,7 +59,7 @@ export default function Home() {
 
         {/* Prep + Practice Section */}
         <section className="p-4 md:p-16 border-t border-black">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-normal tracking-tight mb-4 md:mb-8 text-peacock-orange">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-normal tracking-tight mb-4 md:mb-8 text-[#7e22cf]">
             PREP + PRACTICE
           </h2>
 
