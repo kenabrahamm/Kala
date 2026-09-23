@@ -19,19 +19,19 @@ export default function Home() {
         <section className="flex flex-col md:flex-row min-h-[calc(100vh-53px)]">
           <div className="w-full md:w-2/5 flex flex-col items-center p-4 md:py-16">
             <div className="w-full flex flex-col flex-grow text-left px-6 sm:px-8 md:px-10 lg:px-12">
-              <div className="flex-grow pt-8 md:pt-0 flex items-start">
+              <div className="pt-12 sm:pt-16 md:pt-24 lg:pt-28">
                 <h1 className="w-full">
                   <Image
                     src="/logo.png"
                     alt="Kala Collective"
-                    width={1080}
+                    width={881}
                     height={400}
                     className="w-full h-auto object-contain"
                     priority
                   />
                 </h1>
               </div>
-              <div className="mt-6 md:mt-auto">
+              <div className="mt-3 md:mt-4">
                 <p className="text-sm sm:text-base md:text-lg">
                 Kala Dance Collective is a not-for-profit arts organization creating frameworks of support for artists working within or in dialogue with South Asian classical practices. Our projects move fluidly between creation and performance, play and research, training and community-building.
                 </p>
@@ -39,6 +39,7 @@ export default function Home() {
                   <span className="text-sm md:text-base">Toronto, Canada</span>
                 </div>
               </div>
+              <div className="flex-grow" aria-hidden="true" />
             </div>
           </div>
           <div className="w-full md:w-3/5 h-[40vh] sm:h-[50vh] md:h-auto relative mt-6 md:mt-0">
