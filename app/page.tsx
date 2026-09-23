@@ -19,20 +19,16 @@ export default function Home() {
         <section className="flex flex-col md:flex-row min-h-[calc(100vh-53px)]">
           <div className="w-full md:w-2/5 flex flex-col items-center p-4 md:py-16">
             <div className="w-full flex flex-col flex-grow text-left px-6 sm:px-8 md:px-10 lg:px-12">
-              <div className="flex-grow pt-8 md:pt-0">
-                <h1 className="text-5xl sm:text-6xl md:text-[8rem] leading-[0.9] font-normal tracking-tight">
-                  <div className="mb-1 md:mb-2">
-                    <Image
-                      src="/logo.png"
-                      alt="Kala Collective Logo"
-                      width={200}
-                      height={200}
-                      className="w-20 h-20 sm:w-32 sm:h-32 md:w-48 md:h-48 object-contain"
-                    />
-                  </div>
-                  Kala
-                  <br />
-                  Collective
+              <div className="flex-grow pt-8 md:pt-0 flex items-start">
+                <h1 className="w-full">
+                  <Image
+                    src="/logo.png"
+                    alt="Kala Collective"
+                    width={800}
+                    height={800}
+                    className="w-full h-auto object-contain"
+                    priority
+                  />
                 </h1>
               </div>
               <div className="mt-6 md:mt-auto">
