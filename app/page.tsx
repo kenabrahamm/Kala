@@ -17,7 +17,7 @@ export default function Home() {
       <main className="flex-1">
         {/* Hero Section */}
         <section className="flex flex-col md:flex-row min-h-[calc(100vh-53px)]">
-          <div className="w-full md:w-1/2 p-4 md:p-16 flex flex-col">
+          <div className="w-full md:w-2/5 p-4 md:p-16 flex flex-col">
             <div className="flex-grow pt-8 md:pt-0">
               <h1 className="text-5xl sm:text-6xl md:text-[8rem] leading-[0.9] font-normal tracking-tight">
                 <div className="mb-1 md:mb-2">
@@ -43,13 +43,13 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="w-full md:w-1/2 h-[40vh] sm:h-[50vh] md:h-auto relative mt-6 md:mt-0 overflow-hidden bg-black">
+          <div className="w-full md:w-3/5 h-[40vh] sm:h-[50vh] md:h-auto relative mt-6 md:mt-0">
             <Image
               src="/hero.jpg"
               alt="Two Bharatanatyam dancers performing outdoors"
               width={1024}
               height={682}
-              className="w-full h-full object-cover scale-90"
+              className="w-full h-full object-cover"
               priority
             />
             <p className="absolute bottom-3 right-3 text-xs text-white/90 drop-shadow-sm">
