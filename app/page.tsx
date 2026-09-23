@@ -43,13 +43,13 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="w-full md:w-1/2 h-[40vh] sm:h-[50vh] md:h-auto relative mt-6 md:mt-0">
+          <div className="w-full md:w-1/2 h-[40vh] sm:h-[50vh] md:h-auto relative mt-6 md:mt-0 overflow-hidden bg-black">
             <Image
               src="/hero.jpg"
               alt="Two Bharatanatyam dancers performing outdoors"
               width={1024}
               height={682}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover scale-90"
               priority
             />
             <p className="absolute bottom-3 right-3 text-xs text-white/90 drop-shadow-sm">
