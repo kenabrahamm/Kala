@@ -17,29 +17,31 @@ export default function Home() {
       <main className="flex-1">
         {/* Hero Section */}
         <section className="flex flex-col md:flex-row min-h-[calc(100vh-53px)]">
-          <div className="w-full md:w-2/5 p-4 md:p-16 flex flex-col">
-            <div className="flex-grow pt-8 md:pt-0">
-              <h1 className="text-5xl sm:text-6xl md:text-[8rem] leading-[0.9] font-normal tracking-tight">
-                <div className="mb-1 md:mb-2">
-                  <Image
-                    src="/logo.png"
-                    alt="Kala Collective Logo"
-                    width={200}
-                    height={200}
-                    className="w-20 h-20 sm:w-32 sm:h-32 md:w-48 md:h-48 object-contain"
-                  />
+          <div className="w-full md:w-2/5 flex flex-col items-center p-4 md:py-16">
+            <div className="w-full flex flex-col flex-grow text-left px-6 sm:px-8 md:px-10 lg:px-12">
+              <div className="flex-grow pt-8 md:pt-0">
+                <h1 className="text-5xl sm:text-6xl md:text-[8rem] leading-[0.9] font-normal tracking-tight">
+                  <div className="mb-1 md:mb-2">
+                    <Image
+                      src="/logo.png"
+                      alt="Kala Collective Logo"
+                      width={200}
+                      height={200}
+                      className="w-20 h-20 sm:w-32 sm:h-32 md:w-48 md:h-48 object-contain"
+                    />
+                  </div>
+                  Kala
+                  <br />
+                  Collective
+                </h1>
+              </div>
+              <div className="mt-6 md:mt-auto">
+                <p className="text-sm sm:text-base md:text-lg">
+                Kala Dance Collective is a not-for-profit arts organization creating frameworks of support for artists working within or in dialogue with South Asian classical practices. Our projects move fluidly between creation and performance, play and research, training and community-building.
+                </p>
+                <div className="mt-4 md:mt-6 flex items-center text-peacock-teal">
+                  <span className="text-sm md:text-base">Toronto, Canada</span>
                 </div>
-                Kala
-                <br />
-                Collective
-              </h1>
-            </div>
-            <div className="mt-6 md:mt-auto max-w-2xl">
-              <p className="text-sm sm:text-base md:text-lg">
-              Kala Dance Collective is a not-for-profit arts organization creating frameworks of support for artists working within or in dialogue with South Asian classical practices. Our projects move fluidly between creation and performance, play and research, training and community-building.
-              </p>
-              <div className="mt-4 md:mt-6 flex items-center text-peacock-teal">
-                <span className="text-sm md:text-base">Toronto, Canada</span>
               </div>
             </div>
           </div>
