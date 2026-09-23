@@ -24,8 +24,8 @@ export default function Home() {
                   <Image
                     src="/logo.png"
                     alt="Kala Collective"
-                    width={800}
-                    height={800}
+                    width={1080}
+                    height={400}
                     className="w-full h-auto object-contain"
                     priority
                   />
